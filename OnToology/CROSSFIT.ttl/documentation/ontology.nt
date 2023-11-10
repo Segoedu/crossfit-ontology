@@ -1,0 +1,1006 @@
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit> <http://purl.org/dc/elements/1.1/created> "2023-11-14T09:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit> <http://purl.org/dc/elements/1.1/creator> "Eduardo de la Cruz <https://segoedu.com/>" .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit> <http://purl.org/dc/elements/1.1/description> "La ontología del CrossFit modela de manera estructurada los movimientos, ejercicios, entrenamientos diarios (WODs), atletas, gimnasios y aspectos nutricionales relacionados con esta disciplina de acondicionamiento físico, permitiendo un análisis detallado de las relaciones y características específicas de cada elemento en el dominio del CrossFit."@es .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit> <http://purl.org/dc/elements/1.1/title> "Crossfit ontology"@en .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit> <http://purl.org/dc/elements/1.1/title> "Ontología del Crossfit"@es .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/created
+<http://purl.org/dc/elements/1.1/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# https://schema.org/schema:address
+<https://schema.org/schema:address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# https://schema.org/schema:telephone
+<https://schema.org/schema:telephone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/entrena
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/entrena> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/entrena> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/esEntreno> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/entrena> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/entrena> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Atleta> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/entrena> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EntrenoWod> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/esEntreno
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/esEntreno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/esEntreno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/esEntreno> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EntrenoWod> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/esEntreno> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Atleta> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasCity
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasCity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnasio> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasCity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Ciudad> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasCity> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona la ciudad en la que se encuentra el gimnasio"@es .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasDate
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EntrenoWod> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Date> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isEquipment> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEstiloWOD
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEstiloWOD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEstiloWOD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEstiloWOD> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WOD> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEstiloWOD> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EstiloWOD> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEstiramiento
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEstiramiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEstiramiento> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isEstiramiento> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEstiramiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ReflexiveProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEstiramiento> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEstiramiento> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Estiramiento> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasExercise
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasExercise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasExercise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasExercise> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/ExerciseWithReps> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasExercise> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasExerciseWithReps
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasExerciseWithReps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasExerciseWithReps> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isExerciseWithReps> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasExerciseWithReps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasExerciseWithReps> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WODLevel> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasExerciseWithReps> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasFood
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasFood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasFood> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isFood> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasFood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasFood> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasFood> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Alimento> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasInterval
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasInterval> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EntrenoWod> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasInterval> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Intervalo> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasMuscle
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasMuscle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasMuscle> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isMuscle> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasMuscle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasMuscle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasMuscle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Músculo> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasPlace
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasPlace> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EntrenoWod> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasPlace> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnasio> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasWOD
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasWOD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasWOD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasWOD> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EntrenoWod> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasWOD> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WOD> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasWODLevel
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasWODLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasWODLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasWODLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WOD> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasWODLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WODLevel> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isEquipment
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isEquipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isEquipment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isEquipment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isEstiramiento
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isEstiramiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isEstiramiento> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Estiramiento> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isEstiramiento> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isExerciseWithReps
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isExerciseWithReps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isExerciseWithReps> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/ExerciseWithReps> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isExerciseWithReps> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WODLevel> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isFood
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isFood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isFood> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Alimento> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isFood> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isMuscle
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isMuscle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isMuscle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Músculo> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isMuscle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise> .
+# 
+# http://www.w3.org/2002/07/owl#topObjectProperty
+<http://www.w3.org/2002/07/owl#topObjectProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WOD> .
+<http://www.w3.org/2002/07/owl#topObjectProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WODLevel> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/address
+<http://schema.org/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnasio> .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/schema:address> .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#comment> "Dirección postal del gimnasio" .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#label> "address" .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Reps
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Reps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Reps> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/ExerciseWithReps> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Reps> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Reps> <http://www.w3.org/2000/01/rdf-schema#comment> "Número de repeticiones especificadas para cada ejercicio en un WOD"@es .
+# 
+# http://xmlns.com/foaf/0.1/homepage
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnasio> .
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/2000/01/rdf-schema#comment> "Dirección web del gimnasio"@es .
+# 
+# http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnasio> .
+<http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/2000/01/rdf-schema#comment> "Correo electrónico del gimnasio"@es .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnasio> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#comment> "Nombre del gimnasio"@es .
+# 
+# http://xmlns.com/foaf/0.1/phone
+<http://xmlns.com/foaf/0.1/phone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/phone> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnasio> .
+<http://xmlns.com/foaf/0.1/phone> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://xmlns.com/foaf/0.1/phone> <http://www.w3.org/2000/01/rdf-schema#comment> "Teléfono del gimnasio"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/Location
+<http://purl.org/dc/elements/1.1/Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/elements/1.1/Location> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/Location/" .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AMRAP
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AMRAP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AMRAP> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EstiloWOD> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Abdomen
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Abdomen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Abdomen> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AirSquat
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AirSquat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AirSquat> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#hasValue> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Barra> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AirSquat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fuerza> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AirSquat> <http://www.w3.org/2000/01/rdf-schema#comment> "Air squat, also called a body weight squat, is one of most vital movements. This is regular squats without using additional weights. This exercise is often used to train endurance, fat burning and for increasing lower body strength and developing core strength and stability. It's important for all athletes of all levels and experience to learn how to squat properly and the best way to do it is to develop good mechanics while under no load."@en .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AirSquat> <http://www.w3.org/2000/01/rdf-schema#label> "Air Squat"@en .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AirSquat> <http://www.w3.org/2000/01/rdf-schema#label> "Sentadilla"@es .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AirSquat> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.youtube.com/watch?v=C_VtOYc6j5c" .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Alimento
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Alimento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Alimento> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/food:FoodProduct> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AssaultBike
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AssaultBike> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AssaultBike> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Cardio> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AssaultBike> <http://www.w3.org/2000/01/rdf-schema#comment> "Usar una bicicleta de asalto para ejercicios de resistencia y cardio."@es .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AssaultBike> <http://www.w3.org/2000/01/rdf-schema#label> "Assault Air Bike"@en .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AssaultBike> <http://www.w3.org/2000/01/rdf-schema#label> "Bicicleta de Asalto"@es .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AssaultBike> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.youtube.com/watch?v=YSrkGWpYnpo" .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Atleta
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Atleta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Atleta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/person> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Atleta> <http://www.w3.org/2000/01/rdf-schema#comment> "Conjunto de atletas y practicantes de CrossFit" .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Atleta> <http://www.w3.org/2000/01/rdf-schema#label> "Atleta" .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Burpee
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Burpee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Burpee> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#complementOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Burpee> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Cardio> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Burpee> <http://www.w3.org/2000/01/rdf-schema#comment> "Burpee is a complex exercise which is used not only in Crossfit but in many other sports, where development and strength and endurance are necessary. This exercise is designed specifically for these purposes. Burpy consists of three separate exercises connected together, namely: air squats, push-ups and jumps."@en .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Burpee> <http://www.w3.org/2000/01/rdf-schema#label> "Burpee" .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Burpee> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.youtube.com/watch?v=TU8QYVW0gDU" .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Cardio
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Cardio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Cardio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/CatCowStretch
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/CatCowStretch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/CatCowStretch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Estiramiento> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/CatCowStretch> <http://www.w3.org/2000/01/rdf-schema#comment> "Movimiento de yoga que flexiona y extiende la columna vertebral."@es .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/CatCowStretch> <http://www.w3.org/2000/01/rdf-schema#label> "Estiramiento Gato-Vaca"@es .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/ChildsPose
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/ChildsPose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/ChildsPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Estiramiento> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/ChildsPose> <http://www.w3.org/2000/01/rdf-schema#comment> "Postura de yoga que estira la espalda y relaja los músculos."@es .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/ChildsPose> <http://www.w3.org/2000/01/rdf-schema#label> "Postura del Niño"@es .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Ciudad
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Ciudad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Ciudad> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/elements/1.1/Location> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Clean
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Clean> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Clean> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid8 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#hasValue> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Barra> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Clean> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fuerza> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Clean> <http://www.w3.org/2000/01/rdf-schema#comment> "The Clean came to Crossfit from Weightlifting, which allows to develop not only power and speed characteristics of body, but also build muscles of the opper and lower body. The exercise is considered basic and involves large muscle groups." .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Clean> <http://www.w3.org/2000/01/rdf-schema#label> "Cargada"@es .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Clean> <http://www.w3.org/2000/01/rdf-schema#label> "Clean" .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Clean> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.youtube.com/watch?v=EKRiW9Yt3Ps" .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/DU
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/DU> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/DU> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid13 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#hasValue> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Comba> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/DU> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Cardio> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/DU> <http://www.w3.org/2000/01/rdf-schema#comment> "Double Unders Jump Rope is an excellent exercise to help improve stamina and conditioning,  which in its efficiency is much superior to running and ordinary jumping rope because the energy cost of exercise is much greater. Also Double Unders Jump Rope perfectly develop coordination of movements. This exercise should be studied only if you are confidently able to jump 100 or more single unders.\n\nThis is standard double-under in which the rope passes completely under the feet twice for each jump. The rope must spin forward for the rep count."@en .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/DU> <http://www.w3.org/2000/01/rdf-schema#label> "Double Unders Jump Rope (DU)"@en .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/DU> <http://www.w3.org/2000/01/rdf-schema#label> "Saltos dobles a la comba"@es .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/DU> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.youtube.com/watch?v=-tF3hUsPZAI" .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Date
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Date> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2006/time#DateTimeDescription> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Deadlift
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Deadlift> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Deadlift> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid18 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#hasValue> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Barra> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Deadlift> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fuerza> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Deadlift> <http://www.w3.org/2000/01/rdf-schema#label> "Deadlift"@en .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Deadlift> <http://www.w3.org/2000/01/rdf-schema#label> "Peso muerto"@es .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Deadlift> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.youtube.com/watch?v=op9kVnSso6Q" .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/DownwardDog
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/DownwardDog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/DownwardDog> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Estiramiento> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/DownwardDog> <http://www.w3.org/2000/01/rdf-schema#comment> "Postura del Perro Abajo): Una postura de yoga que estira la espalda y las piernas."@es .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/DownwardDog> <http://www.w3.org/2000/01/rdf-schema#label> "Postura del Perro Abajo"@es .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EMOM
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EMOM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EMOM> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EstiloWOD> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EntrenoWod
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EntrenoWod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment> <http://www.w3.org/2000/01/rdf-schema#comment> "Material y equipamiento usado para los diferentes ejercicios"@es .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment> <http://www.w3.org/2000/01/rdf-schema#label> "Material"@es .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Escalado
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Escalado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Escalado> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WODLevel> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Escalado> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/RX> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EstiloWOD
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EstiloWOD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Estiramiento
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Estiramiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Estiramiento> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/ExerciseWithReps
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/ExerciseWithReps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/ForRounds
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/ForRounds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/ForRounds> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EstiloWOD> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fortime
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fortime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fortime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EstiloWOD> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fran
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fran> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fran> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid23 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid26 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Thruster> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pullup> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasExercise> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid30 .
+_:genid30 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/ForRounds> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEstiloWOD> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WOD> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fran> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WOD> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fran> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Murph> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fran> <http://www.w3.org/2000/01/rdf-schema#comment> "The workout:\n\nThree rounds, 21-15- and 9 reps, for time of:\n\n    43/30 kg (95 lb) thruster\n    Pull-ups" .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fran> <http://www.w3.org/2000/01/rdf-schema#label> "Fran" .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fran> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.youtube.com/watch?v=KYaqy4zcAJg&t=3s&ab_channel=CrossFit" .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fuerza
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fuerza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fuerza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnasio
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnasio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnasio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Organization> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnástico
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnástico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnástico> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#complementOf> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnástico> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Handstand
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Handstand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Handstand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnástico> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Handstand> <http://www.w3.org/2000/01/rdf-schema#label> "Handstand"@en .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Handstand> <http://www.w3.org/2000/01/rdf-schema#label> "Pino"@es .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Intermedio
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Intermedio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Intermedio> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid34 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid36 .
+_:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/RX> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasWODLevel> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid38 .
+_:genid38 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WOD> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/entrena> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Atleta> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Intermedio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Atleta> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Intermedio> <http://www.w3.org/2000/01/rdf-schema#comment> "Un atleta intermedio es un atleta que ha entrenado al menos una vez y alguno de sus entrenamientos han sido RX" .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Intervalo
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Intervalo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Intervalo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2006/time#Interval> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/KettlebellSwing
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/KettlebellSwing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/KettlebellSwing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fuerza> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/KettlebellSwing> <http://www.w3.org/2000/01/rdf-schema#label> "Balanceo de pesa rusa"@es .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/KettlebellSwing> <http://www.w3.org/2000/01/rdf-schema#label> "Kettlebell Swing"@en .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/KettlebellSwing> <http://www.w3.org/2000/01/rdf-schema#label> "The Kettlebell Swing: is one of most popular movements in crossfit, and it's fairly.\n\nThe Kettlebell Swing can be used by professional athletes and beginners, to strengthen the body and prepared for more harder workouts"@en .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/KettlebellSwing> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.youtube.com/watch?v=vdezTMulJ-k" .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Murph
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Murph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Murph> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid40 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid42 .
+_:genid42 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid43 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pushup> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pullup> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AirSquat> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasExercise> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid48 .
+_:genid48 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fortime> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEstiloWOD> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WOD> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Murph> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WOD> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Murph> <http://www.w3.org/2000/01/rdf-schema#comment> "The workout:\n\n    1 mile run\n    100 pull-ups\n    200 push-ups\n    300 air squats\n    1-mile run\n\nAll with a weight vest (20/14 lb) \n\nESCALADO\n\n👉 Carrera 400 m \n👉 25 Pull-Ups – dominadas \n👉 50 Push-Ups – flexiones \n👉 75 Air Squats – sentadillas al aire \n👉 Carrera 400 m" .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Murph> <http://www.w3.org/2000/01/rdf-schema#label> "Murph" .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Murph> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.youtube.com/watch?v=muGj0XrH93w" .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/MuscleUp
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/MuscleUp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/MuscleUp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnástico> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/MuscleUp> <http://www.w3.org/2000/01/rdf-schema#comment> "Bar Muscle-Up"@en .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/MuscleUp> <http://www.w3.org/2000/01/rdf-schema#comment> "This exercise is great for developing high-speed power of the upper body. Besides main strength and stamina, Bar Muscle-Up develops coordination as well. This exercises are classified as technically complex, therefore it is recommended to start studying it after mastering the preparatory exercises.\n\nIn the bar muscle-up, the athlete must begin with or pass though hand below the bar, with the arms fully extended and the feet off the ground. Kipping the muscle-up is acceptable, but pull-overs, rolls to support and glide kips are not permitted. The heels may not rise above the height of the bar during the kip.\n\nAt the top, the elbows must be fully locked while the athlete is in the support position above the bar with the shoulders over or in front of the bar. Athletes must pass through some portion of a dip-to-lockout over the bar. Only the hands, and no other part of the arm, may touch the pull-up bar to assist the athlete in completing the rep. One on top, the hands must stay in contact with the bar, and athletes must maintain support with their arms. Removing the hands and resting while on top of the bar is not allowed. Athletes may wrap tape around the pull-up bar OR wear hand protection (gymnastics-style, grips, gloves, etc.), but they may not tape the bar AND wear hand protection."@en .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/MuscleUp> <http://www.w3.org/2000/01/rdf-schema#comment> "Un movimiento que combina una dominada y una flexión de tríceps para pasar por encima de una barra o anillas."@es .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Músculo
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Músculo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/PigeonPose
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/PigeonPose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/PigeonPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Estiramiento> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/PigeonPose> <http://www.w3.org/2000/01/rdf-schema#comment> "Estiramiento de caderas y glúteos."@es .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/PigeonPose> <http://www.w3.org/2000/01/rdf-schema#label> "Postura de la Paloma"@es .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pistol
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pistol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pistol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnástico> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pistol> <http://www.w3.org/2000/01/rdf-schema#comment> "Pistol Squat can be considered basic bodyweight lower body workouts. This exercise is one of the most difficult exercises, even for advanced exercisers. Easier versions of this movement include partial reps or self assistance on horizontal bar, from raised rear leg, or with one leg wrapped behind supporting leg. Other squatting or split squat movements can also be performed. Self-assisted Single Leg Squat (leg wrapped) Self-assisted Single Leg Squat (bar) Leg Raised Back Single Leg Split Squat"@en .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pistol> <http://www.w3.org/2000/01/rdf-schema#comment> "Un tipo de sentadilla en una sola pierna."@es .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pistol> <http://www.w3.org/2000/01/rdf-schema#label> "Pistol Squat"@en .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pistol> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.youtube.com/watch?v=qDcniqddTeE" .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Plank
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Plank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Plank> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Abdomen> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Plank> <http://www.w3.org/2000/01/rdf-schema#comment> "Un ejercicio clásico para fortalecer los músculos abdominales."@es .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Plank> <http://www.w3.org/2000/01/rdf-schema#label> "Plancha"@es .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Profesional
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Profesional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Profesional> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid50 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid52 .
+_:genid52 <http://www.w3.org/2002/07/owl#minCardinality> "5"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/entrena> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid54 .
+_:genid54 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/RX> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasWODLevel> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Atleta> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Profesional> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Atleta> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Profesional> <http://www.w3.org/2000/01/rdf-schema#comment> "Un profesional es un atleta que ha entrenado al menos 5 veces y todos sus entrenamientos han sido RX" .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pullup
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pullup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pullup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnástico> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pullup> <http://www.w3.org/2000/01/rdf-schema#comment> "The CrossFit Pull-Ups same are known as Kipping Pull-Ups it's one of fundamental CrossFit movements. It's very technical movement wich needed from athlete good coordination and power.\n\nThis is a standard chin-over-bar pull-up. Dead hang, kipping or butterfly pull-ups, are permitted as long as all the requirements are met. The arms must be fully extended at the bottom with the feet off the ground.\n\nAt the top of the movement, the chin must break the horizontal plane of the bar. Athletes may wrap tape around the pull-up bar OR wear hand protection (gymnastics-style grips, gloves, etc.), but they may not tape the bar AND wear hand protection."@en .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pullup> <http://www.w3.org/2000/01/rdf-schema#label> "Dominada"@es .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pullup> <http://www.w3.org/2000/01/rdf-schema#label> "Pull Up"@en .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pullup> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.youtube.com/watch?v=r45xLlH7r_M" .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pushup
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pushup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pushup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fuerza> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pushup> <http://www.w3.org/2000/01/rdf-schema#comment> "The Push Up is a fundamental movement of each fitness program, you can perform it anywhere without special equipment.\n\nThe main Benefits of push ups:\n- Good workout for upper body muscles \n- Make a strong core\n- You can do it anywhere\n- Improve your posture\n- Burn Calories and Fat"@en .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pushup> <http://www.w3.org/2000/01/rdf-schema#label> "Flexión"@es .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pushup> <http://www.w3.org/2000/01/rdf-schema#label> "Push Up"@en .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pushup> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.youtube.com/watch?v=_l3ySVKYVJ8" .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/RX
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/RX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/RX> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WODLevel> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Rookie
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Rookie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Rookie> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid56 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid58 .
+_:genid58 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Escalado> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasWODLevel> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid60 .
+_:genid60 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WOD> .
+_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/entrena> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Atleta> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Rookie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Atleta> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Rookie> <http://www.w3.org/2000/01/rdf-schema#comment> "Un rookie es un atleta que ha entrenado al menos una vez y todos sus entrenamientos han sido Escalados" .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Row
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Row> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Row> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Cardio> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Row> <http://www.w3.org/2000/01/rdf-schema#comment> "Utilizar una máquina de remo para ejercicios cardiovasculares."@es .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Row> <http://www.w3.org/2000/01/rdf-schema#label> "Remo"@es .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Run
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Run> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Run> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid62 .
+_:genid62 <http://www.w3.org/2002/07/owl#complementOf> _:genid63 .
+_:genid63 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment> .
+_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Run> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Cardio> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Run> <http://www.w3.org/2000/01/rdf-schema#comment> "Correr distancias variadas como parte de un WOD o entrenamiento."@es .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Run> <http://www.w3.org/2000/01/rdf-schema#label> "Correr"@es .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/SeatedForwardBend
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/SeatedForwardBend> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/SeatedForwardBend> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Estiramiento> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/SeatedForwardBend> <http://www.w3.org/2000/01/rdf-schema#comment> "Estiramiento de las piernas y la espalda"@es .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/SeatedForwardBend> <http://www.w3.org/2000/01/rdf-schema#label> "Flexión hacia Adelante Sentado"@es .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/SitUp
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/SitUp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/SitUp> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid64 .
+_:genid64 <http://www.w3.org/2002/07/owl#complementOf> _:genid65 .
+_:genid65 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment> .
+_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/SitUp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Abdomen> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/SitUp> <http://www.w3.org/2000/01/rdf-schema#comment> "Un ejercicio clásico para fortalecer los músculos abdominales."@es .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/SitUp> <http://www.w3.org/2000/01/rdf-schema#label> "Sit Up"@es .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Snatch
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Snatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Snatch> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid66 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid68 .
+_:genid68 <http://www.w3.org/2002/07/owl#hasValue> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Barra> .
+_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid70 .
+_:genid70 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment> .
+_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Snatch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fuerza> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Snatch> <http://www.w3.org/2000/01/rdf-schema#comment> "For the snatch, the lifter takes the barbell from the floor to an overhead position in a single motion. it’s one of the most explosive and athletic movements in all of sports. Looks can be deceiving, though; the snatch is a finesse lift. When executed perfectly, heavy weight feels light."@en .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Snatch> <http://www.w3.org/2000/01/rdf-schema#label> "Arrancada"@es .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Snatch> <http://www.w3.org/2000/01/rdf-schema#label> "Snatch"@en .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Snatch> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.youtube.com/watch?v=9xQp2sldyts" .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Thruster
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Thruster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Thruster> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid71 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid73 .
+_:genid73 <http://www.w3.org/2002/07/owl#hasValue> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Barra> .
+_:genid73 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid75 .
+_:genid75 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment> .
+_:genid75 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Thruster> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fuerza> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Thruster> <http://www.w3.org/2000/01/rdf-schema#comment> "The thruster is a serious compound (utilizes more than one joint) exercise that combines a clean, front squat and push-press." .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Thruster> <http://www.w3.org/2000/01/rdf-schema#label> "Thrusters"@en .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Thruster> <http://www.w3.org/2000/01/rdf-schema#label> "Thrusters"@es .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Thruster> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.youtube.com/watch?v=aea5BGj9a8Y" .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/VUp
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/VUp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/VUp> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid76 .
+_:genid76 <http://www.w3.org/2002/07/owl#complementOf> _:genid77 .
+_:genid77 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment> .
+_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/VUp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Abdomen> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/VUp> <http://www.w3.org/2000/01/rdf-schema#comment> "The V-up is an ab exercise that works the entire rectus abdominis which is what most people refer to as the “6 pack”. It basically involves folding your legs and upper body into a V shape in order to engage all your ab muscles." .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/VUp> <http://www.w3.org/2000/01/rdf-schema#label> "V Up"@en .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/VUp> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.youtube.com/watch?v=Mk4zCq9b6hU" .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WOD
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WOD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WODLevel
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WODLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/food:FoodProduct
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/food:FoodProduct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/food:FoodProduct> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://data.lirmm.fr/ontologies/food#FoodProduct" .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/food:FoodProduct> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://foodon.org/design/foodon-structure/" .
+# 
+# http://www.w3.org/2006/time#DateTimeDescription
+<http://www.w3.org/2006/time#DateTimeDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2006/time#DateTimeDescription> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://www.w3.org/TR/owl-time/#time:DateTimeDescription" .
+# 
+# http://www.w3.org/2006/time#Interval
+<http://www.w3.org/2006/time#Interval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2006/time#Interval> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://www.w3.org/TR/owl-time/#time:Interval" .
+# 
+# http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://xmlns.com/foaf/0.1/#term_Organization" .
+# 
+# http://xmlns.com/foaf/0.1/person
+<http://xmlns.com/foaf/0.1/person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/person> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://lov.linkeddata.es/dataset/lov/vocabs/foaf" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Barra
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Barra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Barra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Cajones
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Cajones> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Cajones> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Comba
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Comba> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Comba> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Mancuerna
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Mancuerna> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Mancuerna> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/PesaRusa
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/PesaRusa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/PesaRusa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Rack
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Rack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Rack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment> .
+# 
+# http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Rope
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Rope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Rope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid78 <http://www.w3.org/2002/07/owl#members> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fortime> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/ForRounds> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EMOM> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AMRAP> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid83 <http://www.w3.org/2002/07/owl#members> _:genid107 .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid106 .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid105 .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid104 .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid103 .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid102 .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid101 .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid100 .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid99 .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid98 .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid97 .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid96 .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid95 .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid94 .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid93 .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid92 .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid91 .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid90 .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid89 .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid87 .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid86 .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/VUp> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Thruster> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Snatch> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/SitUp> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/SeatedForwardBend> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Run> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Row> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pushup> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pullup> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Plank> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pistol> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/PigeonPose> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/MuscleUp> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/KettlebellSwing> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Handstand> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/DownwardDog> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Deadlift> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/DU> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Clean> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/ChildsPose> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/CatCowStretch> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Burpee> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AssaultBike> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AirSquat> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid108 <http://www.w3.org/2002/07/owl#members> _:genid115 .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid114 .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid113 .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid112 .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid111 .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid110 .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid109 .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Thruster> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Snatch> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pushup> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/KettlebellSwing> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Deadlift> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Clean> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AirSquat> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid116 <http://www.w3.org/2002/07/owl#members> _:genid121 .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid120 .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid119 .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid118 .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid117 .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Run> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Row> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/DU> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Burpee> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AssaultBike> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid122 <http://www.w3.org/2002/07/owl#members> _:genid127 .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid126 .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid125 .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid124 .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid123 .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/SeatedForwardBend> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/PigeonPose> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/DownwardDog> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/ChildsPose> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/CatCowStretch> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid128 <http://www.w3.org/2002/07/owl#members> _:genid131 .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid130 .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid129 .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Rookie> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Profesional> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Intermedio> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid132 <http://www.w3.org/2002/07/owl#members> _:genid135 .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid134 .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid133 .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/VUp> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/SitUp> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Plank> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

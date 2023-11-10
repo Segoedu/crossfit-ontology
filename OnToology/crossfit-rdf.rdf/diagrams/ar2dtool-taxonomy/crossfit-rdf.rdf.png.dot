@@ -1,0 +1,52 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; ":Atleta" ":Handstand" ":Murph" ":Thruster" ":MuscleUp" ":Fuerza" "dc:Location" ":Gimnasio" ":Fortime" ":Snatch" ":Clean" ":ForRounds" ":Deadlift" ":Fran" ":EMOM" ":VUp" "http://xmlns.com/foaf/0.1/organization" ":PigeonPose" ":RX" ":CatCowStretch" ":KettlebellSwing" ":Pushup" ":Abdomen" ":SitUp" ":ChildsPose" ":AMRAP" ":Pullup" ":Ciudad" ":Rookie" ":Estiramiento" ":Cardio" ":DU" "http://xmlns.com/foaf/0.1/person" ":Alimento" ":EstiloWOD" ":Intervalo" ":Escalado" ":SeatedForwardBend" "http://www.w3.org/2006/time#DateTimeDescription" ":AssaultBike" ":Plank" ":Burpee" ":AirSquat" ":Profesional" ":Gimnástico" "http://www.w3.org/2006/time#Interval" ":Run" ":WODLevel" ":Intermedio" ":Date" "https://github.com/segoedu/crossfit-ontology/food:FoodProduct" ":WOD" ":Row" ":Exercise" ":Pistol" ":DownwardDog" ; /*classes style*/
+	":Murph" -> ":WOD" [ label = "rdfs:subClassOf" ];
+	":Ciudad" -> "dc:Location" [ label = "rdfs:subClassOf" ];
+	":PigeonPose" -> ":Estiramiento" [ label = "rdfs:subClassOf" ];
+	":DownwardDog" -> ":Estiramiento" [ label = "rdfs:subClassOf" ];
+	":MuscleUp" -> ":Gimnástico" [ label = "rdfs:subClassOf" ];
+	":SitUp" -> ":Abdomen" [ label = "rdfs:subClassOf" ];
+	":Row" -> ":Cardio" [ label = "rdfs:subClassOf" ];
+	":AssaultBike" -> ":Cardio" [ label = "rdfs:subClassOf" ];
+	":Intervalo" -> "http://www.w3.org/2006/time#Interval" [ label = "rdfs:subClassOf" ];
+	":Fran" -> ":WOD" [ label = "rdfs:subClassOf" ];
+	":Deadlift" -> ":Fuerza" [ label = "rdfs:subClassOf" ];
+	":Clean" -> ":Fuerza" [ label = "rdfs:subClassOf" ];
+	":Fortime" -> ":EstiloWOD" [ label = "rdfs:subClassOf" ];
+	":Handstand" -> ":Gimnástico" [ label = "rdfs:subClassOf" ];
+	":Thruster" -> ":Fuerza" [ label = "rdfs:subClassOf" ];
+	":Estiramiento" -> ":Exercise" [ label = "rdfs:subClassOf" ];
+	":Pullup" -> ":Gimnástico" [ label = "rdfs:subClassOf" ];
+	":Gimnástico" -> ":Exercise" [ label = "rdfs:subClassOf" ];
+	":DU" -> ":Cardio" [ label = "rdfs:subClassOf" ];
+	":EMOM" -> ":EstiloWOD" [ label = "rdfs:subClassOf" ];
+	":AirSquat" -> ":Fuerza" [ label = "rdfs:subClassOf" ];
+	":Gimnasio" -> "http://xmlns.com/foaf/0.1/organization" [ label = "rdfs:subClassOf" ];
+	":Fuerza" -> ":Exercise" [ label = "rdfs:subClassOf" ];
+	":RX" -> ":WODLevel" [ label = "rdfs:subClassOf" ];
+	":CatCowStretch" -> ":Estiramiento" [ label = "rdfs:subClassOf" ];
+	":Atleta" -> "http://xmlns.com/foaf/0.1/person" [ label = "rdfs:subClassOf" ];
+	":AMRAP" -> ":EstiloWOD" [ label = "rdfs:subClassOf" ];
+	":Alimento" -> "https://github.com/segoedu/crossfit-ontology/food:FoodProduct" [ label = "rdfs:subClassOf" ];
+	":Abdomen" -> ":Exercise" [ label = "rdfs:subClassOf" ];
+	":Profesional" -> ":Atleta" [ label = "rdfs:subClassOf" ];
+	":Cardio" -> ":Exercise" [ label = "rdfs:subClassOf" ];
+	":Burpee" -> ":Cardio" [ label = "rdfs:subClassOf" ];
+	":Rookie" -> ":Atleta" [ label = "rdfs:subClassOf" ];
+	":Escalado" -> ":WODLevel" [ label = "rdfs:subClassOf" ];
+	":ForRounds" -> ":EstiloWOD" [ label = "rdfs:subClassOf" ];
+	":ChildsPose" -> ":Estiramiento" [ label = "rdfs:subClassOf" ];
+	":Pushup" -> ":Fuerza" [ label = "rdfs:subClassOf" ];
+	":SeatedForwardBend" -> ":Estiramiento" [ label = "rdfs:subClassOf" ];
+	":Pistol" -> ":Gimnástico" [ label = "rdfs:subClassOf" ];
+	":KettlebellSwing" -> ":Fuerza" [ label = "rdfs:subClassOf" ];
+	":Date" -> "http://www.w3.org/2006/time#DateTimeDescription" [ label = "rdfs:subClassOf" ];
+	":VUp" -> ":Abdomen" [ label = "rdfs:subClassOf" ];
+	":Run" -> ":Cardio" [ label = "rdfs:subClassOf" ];
+	":Snatch" -> ":Fuerza" [ label = "rdfs:subClassOf" ];
+	":Intermedio" -> ":Atleta" [ label = "rdfs:subClassOf" ];
+	":Plank" -> ":Abdomen" [ label = "rdfs:subClassOf" ];
+
+}
