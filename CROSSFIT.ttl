@@ -8,13 +8,13 @@
 @prefix untitled-ontology-23: <http://www.semanticweb.org/user/ontologies/2023/10/untitled-ontology-23#> .
 @base <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/> .
 
-<http://www.semanticweb.org/user/ontologies/2023/10/crossfit> rdf:type owl:Ontology ;
-                                                               <http://purl.org/dc/elements/1.1/created> "2023-11-14T09:00:00"^^xsd:dateTime ;
-                                                               <http://purl.org/dc/elements/1.1/creator> "Eduardo de la Cruz <https://segoedu.com/>" ;
-                                                               <http://purl.org/dc/elements/1.1/description> "La ontología del CrossFit modela de manera estructurada los movimientos, ejercicios, entrenamientos diarios (WODs), atletas, gimnasios y aspectos nutricionales relacionados con esta disciplina de acondicionamiento físico, permitiendo un análisis detallado de las relaciones y características específicas de cada elemento en el dominio del CrossFit."@es ;
-                                                               <http://purl.org/dc/elements/1.1/title> "Crossfit ontology"@en ,
-                                                                                                       "Ontología del Crossfit"@es ;
-                                                               owl:versionInfo "0.0.1" .
+<https://github.com/segoedu/crossfit-ontology> rdf:type owl:Ontology ;
+                                                <http://purl.org/dc/elements/1.1/created> "2023-11-14T09:00:00"^^xsd:dateTime ;
+                                                <http://purl.org/dc/elements/1.1/creator> "Eduardo de la Cruz <https://segoedu.com/>" ;
+                                                <http://purl.org/dc/elements/1.1/description> "La ontología del CrossFit modela de manera estructurada los movimientos, ejercicios, entrenamientos diarios (WODs), atletas, gimnasios y aspectos nutricionales relacionados con esta disciplina de acondicionamiento físico, permitiendo un análisis detallado de las relaciones y características específicas de cada elemento en el dominio del CrossFit."@es ;
+                                                <http://purl.org/dc/elements/1.1/title> "Crossfit ontology"@en ,
+                                                                                        "Ontología del Crossfit"@es ;
+                                                owl:versionInfo "0.0.1" .
 
 #################################################################
 #    Annotation properties
@@ -56,151 +56,255 @@ xsd:date rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#entrena
-:entrena rdf:type owl:ObjectProperty ;
-         owl:inverseOf :esEntreno ;
-         rdf:type owl:FunctionalProperty ;
-         rdfs:domain :Atleta ;
-         rdfs:range :EntrenoWod .
-
-
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#esEntreno
-:esEntreno rdf:type owl:ObjectProperty ,
-                    owl:InverseFunctionalProperty ;
-           rdfs:domain :EntrenoWod ;
-           rdfs:range :Atleta .
-
-
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#hasCity
-:hasCity rdf:type owl:ObjectProperty ,
-                  owl:FunctionalProperty ;
-         rdfs:domain :Gimnasio ;
-         rdfs:range :Ciudad ;
-         rdfs:comment "Relaciona la ciudad en la que se encuentra el gimnasio"@es .
-
-
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#hasDate
-:hasDate rdf:type owl:ObjectProperty ,
-                  owl:FunctionalProperty ;
-         rdfs:domain :EntrenoWod ;
-         rdfs:range :Date .
-
-
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#hasEquipment
-:hasEquipment rdf:type owl:ObjectProperty ;
-              owl:inverseOf :isEquipment ;
-              rdf:type owl:TransitiveProperty ;
-              rdfs:domain :Exercise ;
-              rdfs:range :Equipment .
-
-
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#hasEstiloWOD
-:hasEstiloWOD rdf:type owl:ObjectProperty ,
-                       owl:TransitiveProperty ;
-              rdfs:domain :WOD ;
-              rdfs:range :EstiloWOD .
-
-
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#hasEstiramiento
-:hasEstiramiento rdf:type owl:ObjectProperty ;
-                 owl:inverseOf :isEstiramiento ;
-                 rdf:type owl:ReflexiveProperty ;
-                 rdfs:domain :Exercise ;
-                 rdfs:range :Estiramiento .
-
-
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#hasExercise
-:hasExercise rdf:type owl:ObjectProperty ,
-                      owl:TransitiveProperty ;
-             rdfs:domain :ExerciseWithReps ;
-             rdfs:range :Exercise .
-
-
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#hasExerciseWithReps
-:hasExerciseWithReps rdf:type owl:ObjectProperty ;
-                     owl:inverseOf :isExerciseWithReps ;
-                     rdf:type owl:TransitiveProperty ;
-                     rdfs:domain :WODLevel ;
-                     rdfs:range :Exercise .
-
-
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#hasFood
-:hasFood rdf:type owl:ObjectProperty ;
-         owl:inverseOf :isFood ;
-         rdf:type owl:TransitiveProperty ;
-         rdfs:domain :Exercise ;
-         rdfs:range :Alimento .
-
-
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#hasInterval
-:hasInterval rdf:type owl:ObjectProperty ,
-                      owl:FunctionalProperty ;
-             rdfs:domain :EntrenoWod ;
-             rdfs:range :Intervalo .
-
-
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#hasMuscle
-:hasMuscle rdf:type owl:ObjectProperty ;
-           owl:inverseOf :isMuscle ;
-           rdf:type owl:TransitiveProperty ;
-           rdfs:domain :Exercise ;
-           rdfs:range :Músculo .
-
-
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#hasPlace
-:hasPlace rdf:type owl:ObjectProperty ,
-                   owl:FunctionalProperty ;
-          rdfs:domain :EntrenoWod ;
-          rdfs:range :Gimnasio .
-
-
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#hasWOD
-:hasWOD rdf:type owl:ObjectProperty ,
-                 owl:FunctionalProperty ;
-        rdfs:domain :EntrenoWod ;
-        rdfs:range :WOD .
-
-
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#hasWODLevel
-:hasWODLevel rdf:type owl:ObjectProperty ,
-                      owl:TransitiveProperty ;
-             rdfs:domain :WOD ;
-             rdfs:range :WODLevel .
-
-
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#isEquipment
-:isEquipment rdf:type owl:ObjectProperty ;
-             rdfs:domain :Equipment ;
-             rdfs:range :Exercise .
-
-
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#isEstiramiento
-:isEstiramiento rdf:type owl:ObjectProperty ;
-                rdfs:domain :Estiramiento ;
-                rdfs:range :Exercise .
-
-
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#isExerciseWithReps
-:isExerciseWithReps rdf:type owl:ObjectProperty ;
-                    rdfs:domain :ExerciseWithReps ;
-                    rdfs:range :WODLevel .
-
-
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#isFood
-:isFood rdf:type owl:ObjectProperty ;
-        rdfs:domain :Alimento ;
-        rdfs:range :Exercise .
-
-
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#isMuscle
-:isMuscle rdf:type owl:ObjectProperty ;
-          rdfs:domain :Músculo ;
-          rdfs:range :Exercise .
-
-
 ###  http://www.w3.org/2002/07/owl#topObjectProperty
-owl:topObjectProperty rdfs:domain :WOD ;
-                      rdfs:range :WODLevel .
+owl:topObjectProperty rdfs:domain <https://github.com/segoedu/crossfit-ontology/WOD> ;
+                      rdfs:range <https://github.com/segoedu/crossfit-ontology/WODLevel> .
+
+
+###  https://github.com/segoedu/crossfit-ontology#isCity
+:isCity rdf:type owl:ObjectProperty ;
+        owl:inverseOf <https://github.com/segoedu/crossfit-ontology/hasCity> ;
+        rdfs:domain <https://github.com/segoedu/crossfit-ontology/Ciudad> ;
+        rdfs:range <https://github.com/segoedu/crossfit-ontology/Gimnasio> ;
+        rdfs:comment "la ciudad donde se ubica un gimnasio"@es ;
+        rdfs:label "isCity" .
+
+
+###  https://github.com/segoedu/crossfit-ontology#isDate
+:isDate rdf:type owl:ObjectProperty ;
+        owl:inverseOf <https://github.com/segoedu/crossfit-ontology/hasDate> ;
+        rdfs:domain <https://github.com/segoedu/crossfit-ontology/Date> ;
+        rdfs:range <https://github.com/segoedu/crossfit-ontology/EntrenoWod> ;
+        rdfs:comment "El día de realización de un entrenamiento"@es ;
+        rdfs:label "isDate" .
+
+
+###  https://github.com/segoedu/crossfit-ontology#isEstiloWOD
+:isEstiloWOD rdf:type owl:ObjectProperty ;
+             owl:inverseOf <https://github.com/segoedu/crossfit-ontology/hasEstiloWOD> ;
+             rdfs:domain <https://github.com/segoedu/crossfit-ontology/EstiloWOD> ;
+             rdfs:range <https://github.com/segoedu/crossfit-ontology/WOD> ;
+             rdfs:comment "el estilo asociado a un WOD específico"@es ;
+             rdfs:label "isEstiloWOD" .
+
+
+###  https://github.com/segoedu/crossfit-ontology#isExercise
+:isExercise rdf:type owl:ObjectProperty ;
+            owl:inverseOf <https://github.com/segoedu/crossfit-ontology/hasExercise> ;
+            rdfs:domain <https://github.com/segoedu/crossfit-ontology/Exercise> ;
+            rdfs:range <https://github.com/segoedu/crossfit-ontology/ExerciseWithReps> ;
+            rdfs:comment "el ejercicio asociado a un entrenamiento"@es ;
+            rdfs:label "isExercise" .
+
+
+###  https://github.com/segoedu/crossfit-ontology#isInterval
+:isInterval rdf:type owl:ObjectProperty ;
+            owl:inverseOf <https://github.com/segoedu/crossfit-ontology/hasInterval> ;
+            rdfs:domain <https://github.com/segoedu/crossfit-ontology/Intervalo> ;
+            rdfs:range <https://github.com/segoedu/crossfit-ontology/EntrenoWod> ;
+            rdfs:comment "el tiempo invertido en un entrenamiento"@es ;
+            rdfs:label "isInterval" .
+
+
+###  https://github.com/segoedu/crossfit-ontology#isPlace
+:isPlace rdf:type owl:ObjectProperty ;
+         owl:inverseOf <https://github.com/segoedu/crossfit-ontology/hasPlace> ;
+         rdfs:domain <https://github.com/segoedu/crossfit-ontology/Gimnasio> ;
+         rdfs:range <https://github.com/segoedu/crossfit-ontology/EntrenoWod> ;
+         rdfs:comment "El lugar donde se ha realizado un entrenamiento"@es ;
+         rdfs:label "isPlace" .
+
+
+###  https://github.com/segoedu/crossfit-ontology#isWOD
+:isWOD rdf:type owl:ObjectProperty ;
+       owl:inverseOf <https://github.com/segoedu/crossfit-ontology/hasWOD> ;
+       rdfs:domain <https://github.com/segoedu/crossfit-ontology/WOD> ;
+       rdfs:range <https://github.com/segoedu/crossfit-ontology/EntrenoWod> ;
+       rdfs:comment "El entrenamiento realizado"@es ;
+       rdfs:label "isWOD" .
+
+
+###  https://github.com/segoedu/crossfit-ontology#isWODLevel
+:isWODLevel rdf:type owl:ObjectProperty ;
+            owl:inverseOf <https://github.com/segoedu/crossfit-ontology/hasWODLevel> ;
+            rdfs:domain <https://github.com/segoedu/crossfit-ontology/WODLevel> ;
+            rdfs:range <https://github.com/segoedu/crossfit-ontology/WOD> ;
+            rdfs:comment "El nivel del entrenamiento"@es ;
+            rdfs:label "isWODLevel" .
+
+
+###  https://github.com/segoedu/crossfit-ontology/entrena
+<https://github.com/segoedu/crossfit-ontology/entrena> rdf:type owl:ObjectProperty ;
+                                                       owl:inverseOf <https://github.com/segoedu/crossfit-ontology/esEntreno> ;
+                                                       rdf:type owl:FunctionalProperty ;
+                                                       rdfs:domain <https://github.com/segoedu/crossfit-ontology/Atleta> ;
+                                                       rdfs:range <https://github.com/segoedu/crossfit-ontology/EntrenoWod> ;
+                                                       rdfs:comment "Atletas entrenan WODs" ;
+                                                       rdfs:label "entrena"@es .
+
+
+###  https://github.com/segoedu/crossfit-ontology/esEntreno
+<https://github.com/segoedu/crossfit-ontology/esEntreno> rdf:type owl:ObjectProperty ,
+                                                                  owl:InverseFunctionalProperty ;
+                                                         rdfs:domain <https://github.com/segoedu/crossfit-ontology/EntrenoWod> ;
+                                                         rdfs:range <https://github.com/segoedu/crossfit-ontology/Atleta> ;
+                                                         rdfs:comment "Un wod específico es entrenado por un atleta" ;
+                                                         rdfs:label "esEntreno"@es .
+
+
+###  https://github.com/segoedu/crossfit-ontology/hasCity
+<https://github.com/segoedu/crossfit-ontology/hasCity> rdf:type owl:ObjectProperty ,
+                                                                owl:FunctionalProperty ;
+                                                       rdfs:domain <https://github.com/segoedu/crossfit-ontology/Gimnasio> ;
+                                                       rdfs:range <https://github.com/segoedu/crossfit-ontology/Ciudad> ;
+                                                       rdfs:comment "Relaciona la ciudad en la que se encuentra el gimnasio"@es ;
+                                                       rdfs:label "hasCity" .
+
+
+###  https://github.com/segoedu/crossfit-ontology/hasDate
+<https://github.com/segoedu/crossfit-ontology/hasDate> rdf:type owl:ObjectProperty ,
+                                                                owl:FunctionalProperty ;
+                                                       rdfs:domain <https://github.com/segoedu/crossfit-ontology/EntrenoWod> ;
+                                                       rdfs:range <https://github.com/segoedu/crossfit-ontology/Date> ;
+                                                       rdfs:comment "Un entrenamiento se ha practicado un día del calendario" ;
+                                                       rdfs:label "hasDate" .
+
+
+###  https://github.com/segoedu/crossfit-ontology/hasEquipment
+<https://github.com/segoedu/crossfit-ontology/hasEquipment> rdf:type owl:ObjectProperty ;
+                                                            owl:inverseOf <https://github.com/segoedu/crossfit-ontology/isEquipment> ;
+                                                            rdfs:domain <https://github.com/segoedu/crossfit-ontology/Exercise> ;
+                                                            rdfs:range <https://github.com/segoedu/crossfit-ontology/Equipment> ;
+                                                            rdfs:comment "Un entrenamiento requiere de un equipamiento"@es ;
+                                                            rdfs:label "hasEquipment" .
+
+
+###  https://github.com/segoedu/crossfit-ontology/hasEstiloWOD
+<https://github.com/segoedu/crossfit-ontology/hasEstiloWOD> rdf:type owl:ObjectProperty ;
+                                                            rdfs:domain <https://github.com/segoedu/crossfit-ontology/WOD> ;
+                                                            rdfs:range <https://github.com/segoedu/crossfit-ontology/EstiloWOD> ;
+                                                            rdfs:comment "Nivel del entrenamiento WOD"@es ;
+                                                            rdfs:label "hasEstiloWOD" .
+
+
+###  https://github.com/segoedu/crossfit-ontology/hasEstiramiento
+<https://github.com/segoedu/crossfit-ontology/hasEstiramiento> rdf:type owl:ObjectProperty ;
+                                                               owl:inverseOf <https://github.com/segoedu/crossfit-ontology/isEstiramiento> ;
+                                                               rdf:type owl:ReflexiveProperty ;
+                                                               rdfs:domain <https://github.com/segoedu/crossfit-ontology/Exercise> ;
+                                                               rdfs:range <https://github.com/segoedu/crossfit-ontology/Estiramiento> ;
+                                                               rdfs:comment "ejercicio tiene un tipo de estiramiento"@es ;
+                                                               rdfs:label "hasEstiramiento" .
+
+
+###  https://github.com/segoedu/crossfit-ontology/hasExercise
+<https://github.com/segoedu/crossfit-ontology/hasExercise> rdf:type owl:ObjectProperty ;
+                                                           rdfs:domain <https://github.com/segoedu/crossfit-ontology/ExerciseWithReps> ;
+                                                           rdfs:range <https://github.com/segoedu/crossfit-ontology/Exercise> ;
+                                                           rdfs:comment "Un ejercicio con repeticiones está asociado a un ejercicio en particular"@es ;
+                                                           rdfs:label "hasExercise" .
+
+
+###  https://github.com/segoedu/crossfit-ontology/hasExerciseWithReps
+<https://github.com/segoedu/crossfit-ontology/hasExerciseWithReps> rdf:type owl:ObjectProperty ;
+                                                                   owl:inverseOf <https://github.com/segoedu/crossfit-ontology/isExerciseWithReps> ;
+                                                                   rdfs:domain <https://github.com/segoedu/crossfit-ontology/WODLevel> ;
+                                                                   rdfs:range <https://github.com/segoedu/crossfit-ontology/ExerciseWithReps> ;
+                                                                   rdfs:comment "Un WOD tiene diferentes ejercicios con repeticiones"@es ;
+                                                                   rdfs:label "hasExerciseWithReps" .
+
+
+###  https://github.com/segoedu/crossfit-ontology/hasFood
+<https://github.com/segoedu/crossfit-ontology/hasFood> rdf:type owl:ObjectProperty ;
+                                                       owl:inverseOf <https://github.com/segoedu/crossfit-ontology/isFood> ;
+                                                       rdfs:domain <https://github.com/segoedu/crossfit-ontology/Exercise> ;
+                                                       rdfs:range <https://github.com/segoedu/crossfit-ontology/Alimento> ;
+                                                       rdfs:comment "Un ejercicio tiene una alimentación recomendada"@es ;
+                                                       rdfs:label "hasFood" .
+
+
+###  https://github.com/segoedu/crossfit-ontology/hasInterval
+<https://github.com/segoedu/crossfit-ontology/hasInterval> rdf:type owl:ObjectProperty ,
+                                                                    owl:FunctionalProperty ;
+                                                           rdfs:domain <https://github.com/segoedu/crossfit-ontology/EntrenoWod> ;
+                                                           rdfs:range <https://github.com/segoedu/crossfit-ontology/Intervalo> ;
+                                                           rdfs:comment "Tiempo en el que se ha ejecutado un WOD"@es ;
+                                                           rdfs:label "hasInterval" .
+
+
+###  https://github.com/segoedu/crossfit-ontology/hasMuscle
+<https://github.com/segoedu/crossfit-ontology/hasMuscle> rdf:type owl:ObjectProperty ;
+                                                         owl:inverseOf <https://github.com/segoedu/crossfit-ontology/isMuscle> ;
+                                                         rdfs:domain <https://github.com/segoedu/crossfit-ontology/Exercise> ;
+                                                         rdfs:range <https://github.com/segoedu/crossfit-ontology/Músculo> ;
+                                                         rdfs:comment "Músculos involucrados en un ejercicio"@es ;
+                                                         rdfs:label "hasMuscle" .
+
+
+###  https://github.com/segoedu/crossfit-ontology/hasPlace
+<https://github.com/segoedu/crossfit-ontology/hasPlace> rdf:type owl:ObjectProperty ,
+                                                                 owl:FunctionalProperty ;
+                                                        rdfs:domain <https://github.com/segoedu/crossfit-ontology/EntrenoWod> ;
+                                                        rdfs:range <https://github.com/segoedu/crossfit-ontology/Gimnasio> ;
+                                                        rdfs:comment "Un entrenamiento tiene lugar en un gimnasio"@es ;
+                                                        rdfs:label "hasPlace" .
+
+
+###  https://github.com/segoedu/crossfit-ontology/hasWOD
+<https://github.com/segoedu/crossfit-ontology/hasWOD> rdf:type owl:ObjectProperty ,
+                                                               owl:FunctionalProperty ;
+                                                      rdfs:domain <https://github.com/segoedu/crossfit-ontology/EntrenoWod> ;
+                                                      rdfs:range <https://github.com/segoedu/crossfit-ontology/WOD> ;
+                                                      rdfs:comment "El entrenamiento de un WOD específico"@es ;
+                                                      rdfs:label "hasWOD" .
+
+
+###  https://github.com/segoedu/crossfit-ontology/hasWODLevel
+<https://github.com/segoedu/crossfit-ontology/hasWODLevel> rdf:type owl:ObjectProperty ;
+                                                           rdfs:domain <https://github.com/segoedu/crossfit-ontology/WOD> ;
+                                                           rdfs:range <https://github.com/segoedu/crossfit-ontology/WODLevel> ;
+                                                           rdfs:comment "Un WOD específico entrenado tiene un nivel asociado"@es ;
+                                                           rdfs:label "hasWODLevel" .
+
+
+###  https://github.com/segoedu/crossfit-ontology/isEquipment
+<https://github.com/segoedu/crossfit-ontology/isEquipment> rdf:type owl:ObjectProperty ;
+                                                           rdfs:domain <https://github.com/segoedu/crossfit-ontology/Equipment> ;
+                                                           rdfs:range <https://github.com/segoedu/crossfit-ontology/Exercise> ;
+                                                           rdfs:comment "El equipamiento utilizado"@es ;
+                                                           rdfs:label "isEquipment" .
+
+
+###  https://github.com/segoedu/crossfit-ontology/isEstiramiento
+<https://github.com/segoedu/crossfit-ontology/isEstiramiento> rdf:type owl:ObjectProperty ;
+                                                              rdfs:domain <https://github.com/segoedu/crossfit-ontology/Estiramiento> ;
+                                                              rdfs:range <https://github.com/segoedu/crossfit-ontology/Exercise> ;
+                                                              rdfs:comment "Un ejercicio que sirve de estiramiento para otro"@es ;
+                                                              rdfs:label "isEstiramiento" .
+
+
+###  https://github.com/segoedu/crossfit-ontology/isExerciseWithReps
+<https://github.com/segoedu/crossfit-ontology/isExerciseWithReps> rdf:type owl:ObjectProperty ;
+                                                                  rdfs:domain <https://github.com/segoedu/crossfit-ontology/ExerciseWithReps> ;
+                                                                  rdfs:range <https://github.com/segoedu/crossfit-ontology/WODLevel> ;
+                                                                  rdfs:comment "Un ejercicio con repeticiones asociado a un entrenamiento"@es ;
+                                                                  rdfs:label "isExerciseWithReps" .
+
+
+###  https://github.com/segoedu/crossfit-ontology/isFood
+<https://github.com/segoedu/crossfit-ontology/isFood> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain <https://github.com/segoedu/crossfit-ontology/Alimento> ;
+                                                      rdfs:range <https://github.com/segoedu/crossfit-ontology/Exercise> ;
+                                                      rdfs:comment "El alimento recomendado tras un entrenamiento"@es ;
+                                                      rdfs:label "isFood" .
+
+
+###  https://github.com/segoedu/crossfit-ontology/isMuscle
+<https://github.com/segoedu/crossfit-ontology/isMuscle> rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain <https://github.com/segoedu/crossfit-ontology/Músculo> ;
+                                                        rdfs:range <https://github.com/segoedu/crossfit-ontology/Exercise> ;
+                                                        rdfs:comment "un músculo involucrado en un ejercicio"@es ;
+                                                        rdfs:label "isMuscle" .
 
 
 #################################################################
@@ -209,45 +313,50 @@ owl:topObjectProperty rdfs:domain :WOD ;
 
 ###  http://schema.org/address
 <http://schema.org/address> rdf:type owl:DatatypeProperty ;
-                            rdfs:domain :Gimnasio ;
+                            rdfs:domain <https://github.com/segoedu/crossfit-ontology/Gimnasio> ;
                             rdfs:range <https://schema.org/schema:address> ;
                             rdfs:comment "Dirección postal del gimnasio" ;
                             rdfs:label "address" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Reps
-:Reps rdf:type owl:DatatypeProperty ;
-      rdfs:domain :ExerciseWithReps ;
-      rdfs:range xsd:string ;
-      rdfs:comment "Número de repeticiones especificadas para cada ejercicio en un WOD"@es .
-
-
 ###  http://xmlns.com/foaf/0.1/homepage
 <http://xmlns.com/foaf/0.1/homepage> rdf:type owl:DatatypeProperty ;
-                                     rdfs:domain :Gimnasio ;
+                                     rdfs:domain <https://github.com/segoedu/crossfit-ontology/Gimnasio> ;
                                      rdfs:range xsd:string ;
-                                     rdfs:comment "Dirección web del gimnasio"@es .
+                                     rdfs:comment "Dirección web del gimnasio"@es ;
+                                     rdfs:label "homepage" .
 
 
 ###  http://xmlns.com/foaf/0.1/mbox
 <http://xmlns.com/foaf/0.1/mbox> rdf:type owl:DatatypeProperty ;
-                                 rdfs:domain :Gimnasio ;
+                                 rdfs:domain <https://github.com/segoedu/crossfit-ontology/Gimnasio> ;
                                  rdfs:range xsd:string ;
-                                 rdfs:comment "Correo electrónico del gimnasio"@es .
+                                 rdfs:comment "Correo electrónico del gimnasio"@es ;
+                                 rdfs:label "mailbox" .
 
 
 ###  http://xmlns.com/foaf/0.1/name
 <http://xmlns.com/foaf/0.1/name> rdf:type owl:DatatypeProperty ;
-                                 rdfs:domain :Gimnasio ;
+                                 rdfs:domain <https://github.com/segoedu/crossfit-ontology/Gimnasio> ;
                                  rdfs:range xsd:string ;
-                                 rdfs:comment "Nombre del gimnasio"@es .
+                                 rdfs:comment "Nombre del gimnasio"@es ;
+                                 rdfs:label "name" .
 
 
 ###  http://xmlns.com/foaf/0.1/phone
 <http://xmlns.com/foaf/0.1/phone> rdf:type owl:DatatypeProperty ;
-                                  rdfs:domain :Gimnasio ;
+                                  rdfs:domain <https://github.com/segoedu/crossfit-ontology/Gimnasio> ;
                                   rdfs:range xsd:string ;
-                                  rdfs:comment "Teléfono del gimnasio"@es .
+                                  rdfs:comment "Teléfono del gimnasio"@es ;
+                                  rdfs:label "phone" .
+
+
+###  https://github.com/segoedu/crossfit-ontology/Reps
+<https://github.com/segoedu/crossfit-ontology/Reps> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <https://github.com/segoedu/crossfit-ontology/ExerciseWithReps> ;
+                                                    rdfs:range xsd:string ;
+                                                    rdfs:comment "Número de repeticiones especificadas para cada ejercicio en un WOD"@es ;
+                                                    rdfs:label "Repeticiones"@es .
 
 
 #################################################################
@@ -256,332 +365,404 @@ owl:topObjectProperty rdfs:domain :WOD ;
 
 ###  http://purl.org/dc/elements/1.1/Location
 <http://purl.org/dc/elements/1.1/Location> rdf:type owl:Class ;
-                                           rdfs:isDefinedBy "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/Location/" .
+                                           rdfs:comment "City" ;
+                                           rdfs:isDefinedBy "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/Location/" ;
+                                           rdfs:label "dc:Location" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#AMRAP
-:AMRAP rdf:type owl:Class ;
-       rdfs:subClassOf :EstiloWOD .
+###  http://www.w3.org/2006/time#DateTimeDescription
+<http://www.w3.org/2006/time#DateTimeDescription> rdf:type owl:Class ;
+                                                  rdfs:comment "Día importado de la ontrología time"@es ;
+                                                  rdfs:isDefinedBy "https://www.w3.org/TR/owl-time/#time:DateTimeDescription" ;
+                                                  rdfs:label "time:DateTimeDescription" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Abdomen
-:Abdomen rdf:type owl:Class ;
-         rdfs:subClassOf :Exercise .
+###  http://www.w3.org/2006/time#Interval
+<http://www.w3.org/2006/time#Interval> rdf:type owl:Class ;
+                                       rdfs:comment "Intervalo de tiempo de la ontología time"@es ;
+                                       rdfs:isDefinedBy "https://www.w3.org/TR/owl-time/#time:Interval" ;
+                                       rdfs:label "time:Interval" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#AirSquat
-:AirSquat rdf:type owl:Class ;
-          owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                       owl:onProperty :hasEquipment ;
-                                                       owl:someValuesFrom :Equipment
-                                                     ]
-                                                     [ rdf:type owl:Restriction ;
-                                                       owl:onProperty :hasEquipment ;
-                                                       owl:hasValue :Barra
-                                                     ]
-                                                   ) ;
-                                rdf:type owl:Class
-                              ] ;
-          rdfs:subClassOf :Fuerza ;
-          rdfs:comment "Air squat, also called a body weight squat, is one of most vital movements. This is regular squats without using additional weights. This exercise is often used to train endurance, fat burning and for increasing lower body strength and developing core strength and stability. It's important for all athletes of all levels and experience to learn how to squat properly and the best way to do it is to develop good mechanics while under no load."@en ;
-          rdfs:label "Air Squat"@en ,
-                     "Sentadilla"@es ;
-          rdfs:seeAlso "https://www.youtube.com/watch?v=C_VtOYc6j5c" .
+###  http://xmlns.com/foaf/0.1/organization
+<http://xmlns.com/foaf/0.1/organization> rdf:type owl:Class ;
+                                         rdfs:comment "Los gimnasios heredan de la clase Organization de foaf"@es ;
+                                         rdfs:isDefinedBy "http://xmlns.com/foaf/0.1/#term_Organization" ;
+                                         rdfs:label "foaf:organization" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Alimento
-:Alimento rdf:type owl:Class ;
-          rdfs:subClassOf :food:FoodProduct .
+###  http://xmlns.com/foaf/0.1/person
+<http://xmlns.com/foaf/0.1/person> rdf:type owl:Class ;
+                                   rdfs:comment "Los atletas heredan de la clase foaf:person"@es ;
+                                   rdfs:isDefinedBy "https://lov.linkeddata.es/dataset/lov/vocabs/foaf" ;
+                                   rdfs:label "foaf:person" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#AssaultBike
-:AssaultBike rdf:type owl:Class ;
-             rdfs:subClassOf :Cardio ;
-             rdfs:comment "Usar una bicicleta de asalto para ejercicios de resistencia y cardio."@es ;
-             rdfs:label "Assault Air Bike"@en ,
-                        "Bicicleta de Asalto"@es ;
-             rdfs:seeAlso "https://www.youtube.com/watch?v=YSrkGWpYnpo" .
+###  https://github.com/segoedu/crossfit-ontology/AMRAP
+<https://github.com/segoedu/crossfit-ontology/AMRAP> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/EstiloWOD> ;
+                                                     rdfs:comment "As many rounds as possible" ;
+                                                     rdfs:label "AMRAP" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Atleta
-:Atleta rdf:type owl:Class ;
-        rdfs:subClassOf <http://xmlns.com/foaf/0.1/person> ;
-        rdfs:comment "Conjunto de atletas y practicantes de CrossFit" ;
-        rdfs:label "Atleta" .
+###  https://github.com/segoedu/crossfit-ontology/Abdomen
+<https://github.com/segoedu/crossfit-ontology/Abdomen> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Exercise> ;
+                                                       rdfs:comment "Ejercicios abdominales"@es ;
+                                                       rdfs:label "Abdomen"@es .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Burpee
-:Burpee rdf:type owl:Class ;
-        owl:equivalentClass [ rdf:type owl:Class ;
-                              owl:complementOf [ rdf:type owl:Restriction ;
-                                                 owl:onProperty :hasEquipment ;
-                                                 owl:someValuesFrom :Equipment
-                                               ]
-                            ] ;
-        rdfs:subClassOf :Cardio ;
-        rdfs:comment "Burpee is a complex exercise which is used not only in Crossfit but in many other sports, where development and strength and endurance are necessary. This exercise is designed specifically for these purposes. Burpy consists of three separate exercises connected together, namely: air squats, push-ups and jumps."@en ;
-        rdfs:label "Burpee" ;
-        rdfs:seeAlso "https://www.youtube.com/watch?v=TU8QYVW0gDU" .
+###  https://github.com/segoedu/crossfit-ontology/AirSquat
+<https://github.com/segoedu/crossfit-ontology/AirSquat> rdf:type owl:Class ;
+                                                        owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty <https://github.com/segoedu/crossfit-ontology/hasEquipment> ;
+                                                                                                     owl:someValuesFrom <https://github.com/segoedu/crossfit-ontology/Equipment>
+                                                                                                   ]
+                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty <https://github.com/segoedu/crossfit-ontology/hasEquipment> ;
+                                                                                                     owl:hasValue <https://github.com/segoedu/crossfit-ontology/Barra>
+                                                                                                   ]
+                                                                                                 ) ;
+                                                                              rdf:type owl:Class
+                                                                            ] ;
+                                                        rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Fuerza> ;
+                                                        rdfs:comment "Air squat, also called a body weight squat, is one of most vital movements. This is regular squats without using additional weights. This exercise is often used to train endurance, fat burning and for increasing lower body strength and developing core strength and stability. It's important for all athletes of all levels and experience to learn how to squat properly and the best way to do it is to develop good mechanics while under no load."@en ;
+                                                        rdfs:label "Air Squat"@en ,
+                                                                   "Sentadilla"@es ;
+                                                        rdfs:seeAlso "https://www.youtube.com/watch?v=C_VtOYc6j5c" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Cardio
-:Cardio rdf:type owl:Class ;
-        rdfs:subClassOf :Exercise .
+###  https://github.com/segoedu/crossfit-ontology/Alimento
+<https://github.com/segoedu/crossfit-ontology/Alimento> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/food:FoodProduct> ;
+                                                        rdfs:comment "Alimentos recomendados para la ingesta anterior o posterior a la realización de un ejercicio"@es ;
+                                                        rdfs:label "Alimento" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#CatCowStretch
-:CatCowStretch rdf:type owl:Class ;
-               rdfs:subClassOf :Estiramiento ;
-               rdfs:comment "Movimiento de yoga que flexiona y extiende la columna vertebral."@es ;
-               rdfs:label "Estiramiento Gato-Vaca"@es .
+###  https://github.com/segoedu/crossfit-ontology/AssaultBike
+<https://github.com/segoedu/crossfit-ontology/AssaultBike> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Cardio> ;
+                                                           rdfs:comment "Usar una bicicleta de asalto para ejercicios de resistencia y cardio."@es ;
+                                                           rdfs:label "Assault Air Bike"@en ,
+                                                                      "Bicicleta de Asalto"@es ;
+                                                           rdfs:seeAlso "https://www.youtube.com/watch?v=YSrkGWpYnpo" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#ChildsPose
-:ChildsPose rdf:type owl:Class ;
-            rdfs:subClassOf :Estiramiento ;
-            rdfs:comment "Postura de yoga que estira la espalda y relaja los músculos."@es ;
-            rdfs:label "Postura del Niño"@es .
+###  https://github.com/segoedu/crossfit-ontology/Atleta
+<https://github.com/segoedu/crossfit-ontology/Atleta> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://xmlns.com/foaf/0.1/person> ;
+                                                      rdfs:comment "Conjunto de atletas y practicantes de CrossFit" ;
+                                                      rdfs:label "Atleta" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Ciudad
-:Ciudad rdf:type owl:Class ;
-        rdfs:subClassOf <http://purl.org/dc/elements/1.1/Location> .
+###  https://github.com/segoedu/crossfit-ontology/Burpee
+<https://github.com/segoedu/crossfit-ontology/Burpee> rdf:type owl:Class ;
+                                                      owl:equivalentClass [ rdf:type owl:Class ;
+                                                                            owl:complementOf [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <https://github.com/segoedu/crossfit-ontology/hasEquipment> ;
+                                                                                               owl:someValuesFrom <https://github.com/segoedu/crossfit-ontology/Equipment>
+                                                                                             ]
+                                                                          ] ;
+                                                      rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Cardio> ;
+                                                      rdfs:comment "Burpee is a complex exercise which is used not only in Crossfit but in many other sports, where development and strength and endurance are necessary. This exercise is designed specifically for these purposes. Burpy consists of three separate exercises connected together, namely: air squats, push-ups and jumps."@en ;
+                                                      rdfs:label "Burpee" ;
+                                                      rdfs:seeAlso "https://www.youtube.com/watch?v=TU8QYVW0gDU" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Clean
-:Clean rdf:type owl:Class ;
-       owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                    owl:onProperty :hasEquipment ;
-                                                    owl:someValuesFrom :Equipment
-                                                  ]
-                                                  [ rdf:type owl:Restriction ;
-                                                    owl:onProperty :hasEquipment ;
-                                                    owl:hasValue :Barra
-                                                  ]
-                                                ) ;
-                             rdf:type owl:Class
-                           ] ;
-       rdfs:subClassOf :Fuerza ;
-       rdfs:comment "The Clean came to Crossfit from Weightlifting, which allows to develop not only power and speed characteristics of body, but also build muscles of the opper and lower body. The exercise is considered basic and involves large muscle groups." ;
-       rdfs:label "Cargada"@es ,
-                  "Clean" ;
-       rdfs:seeAlso "https://www.youtube.com/watch?v=EKRiW9Yt3Ps" .
+###  https://github.com/segoedu/crossfit-ontology/Cardio
+<https://github.com/segoedu/crossfit-ontology/Cardio> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Exercise> ;
+                                                      rdfs:comment "Ejercicio de Cardio"@es ;
+                                                      rdfs:label "Cardio" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#DU
-:DU rdf:type owl:Class ;
-    owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                 owl:onProperty :hasEquipment ;
-                                                 owl:someValuesFrom :Equipment
-                                               ]
-                                               [ rdf:type owl:Restriction ;
-                                                 owl:onProperty :hasEquipment ;
-                                                 owl:hasValue :Comba
-                                               ]
-                                             ) ;
-                          rdf:type owl:Class
-                        ] ;
-    rdfs:subClassOf :Cardio ;
-    rdfs:comment """Double Unders Jump Rope is an excellent exercise to help improve stamina and conditioning,  which in its efficiency is much superior to running and ordinary jumping rope because the energy cost of exercise is much greater. Also Double Unders Jump Rope perfectly develop coordination of movements. This exercise should be studied only if you are confidently able to jump 100 or more single unders.
+###  https://github.com/segoedu/crossfit-ontology/CatCowStretch
+<https://github.com/segoedu/crossfit-ontology/CatCowStretch> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Estiramiento> ;
+                                                             rdfs:comment "Movimiento de yoga que flexiona y extiende la columna vertebral."@es ;
+                                                             rdfs:label "Estiramiento Gato-Vaca"@es .
+
+
+###  https://github.com/segoedu/crossfit-ontology/ChildsPose
+<https://github.com/segoedu/crossfit-ontology/ChildsPose> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Estiramiento> ;
+                                                          rdfs:comment "Postura de yoga que estira la espalda y relaja los músculos."@es ;
+                                                          rdfs:label "Postura del Niño"@es .
+
+
+###  https://github.com/segoedu/crossfit-ontology/Ciudad
+<https://github.com/segoedu/crossfit-ontology/Ciudad> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://purl.org/dc/elements/1.1/Location> ;
+                                                      rdfs:comment "Ciudad donde se ubica un gimnasio"@es ;
+                                                      rdfs:label "City"@en ,
+                                                                 "Ciudad"@es .
+
+
+###  https://github.com/segoedu/crossfit-ontology/Clean
+<https://github.com/segoedu/crossfit-ontology/Clean> rdf:type owl:Class ;
+                                                     owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <https://github.com/segoedu/crossfit-ontology/hasEquipment> ;
+                                                                                                  owl:someValuesFrom <https://github.com/segoedu/crossfit-ontology/Equipment>
+                                                                                                ]
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <https://github.com/segoedu/crossfit-ontology/hasEquipment> ;
+                                                                                                  owl:hasValue <https://github.com/segoedu/crossfit-ontology/Barra>
+                                                                                                ]
+                                                                                              ) ;
+                                                                           rdf:type owl:Class
+                                                                         ] ;
+                                                     rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Fuerza> ;
+                                                     rdfs:comment "The Clean came to Crossfit from Weightlifting, which allows to develop not only power and speed characteristics of body, but also build muscles of the opper and lower body. The exercise is considered basic and involves large muscle groups." ;
+                                                     rdfs:label "Cargada"@es ,
+                                                                "Clean" ;
+                                                     rdfs:seeAlso "https://www.youtube.com/watch?v=EKRiW9Yt3Ps" .
+
+
+###  https://github.com/segoedu/crossfit-ontology/DU
+<https://github.com/segoedu/crossfit-ontology/DU> rdf:type owl:Class ;
+                                                  owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <https://github.com/segoedu/crossfit-ontology/hasEquipment> ;
+                                                                                               owl:someValuesFrom <https://github.com/segoedu/crossfit-ontology/Equipment>
+                                                                                             ]
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <https://github.com/segoedu/crossfit-ontology/hasEquipment> ;
+                                                                                               owl:hasValue <https://github.com/segoedu/crossfit-ontology/Comba>
+                                                                                             ]
+                                                                                           ) ;
+                                                                        rdf:type owl:Class
+                                                                      ] ;
+                                                  rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Cardio> ;
+                                                  rdfs:comment """Double Unders Jump Rope is an excellent exercise to help improve stamina and conditioning,  which in its efficiency is much superior to running and ordinary jumping rope because the energy cost of exercise is much greater. Also Double Unders Jump Rope perfectly develop coordination of movements. This exercise should be studied only if you are confidently able to jump 100 or more single unders.
 
 This is standard double-under in which the rope passes completely under the feet twice for each jump. The rope must spin forward for the rep count."""@en ;
-    rdfs:label "Double Unders Jump Rope (DU)"@en ,
-               "Saltos dobles a la comba"@es ;
-    rdfs:seeAlso "https://www.youtube.com/watch?v=-tF3hUsPZAI" .
+                                                  rdfs:label "Double Unders Jump Rope (DU)"@en ,
+                                                             "Saltos dobles a la comba"@es ;
+                                                  rdfs:seeAlso "https://www.youtube.com/watch?v=-tF3hUsPZAI" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Date
-:Date rdf:type owl:Class ;
-      rdfs:subClassOf <http://www.w3.org/2006/time#DateTimeDescription> .
+###  https://github.com/segoedu/crossfit-ontology/Date
+<https://github.com/segoedu/crossfit-ontology/Date> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://www.w3.org/2006/time#DateTimeDescription> ;
+                                                    rdfs:comment "Día de realización del entrenamiento por parte de un atleta"@es ;
+                                                    rdfs:label "Date" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Deadlift
-:Deadlift rdf:type owl:Class ;
-          owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                       owl:onProperty :hasEquipment ;
-                                                       owl:someValuesFrom :Equipment
-                                                     ]
-                                                     [ rdf:type owl:Restriction ;
-                                                       owl:onProperty :hasEquipment ;
-                                                       owl:hasValue :Barra
-                                                     ]
-                                                   ) ;
-                                rdf:type owl:Class
-                              ] ;
-          rdfs:subClassOf :Fuerza ;
-          rdfs:label "Deadlift"@en ,
-                     "Peso muerto"@es ;
-          rdfs:seeAlso "https://www.youtube.com/watch?v=op9kVnSso6Q" .
+###  https://github.com/segoedu/crossfit-ontology/Deadlift
+<https://github.com/segoedu/crossfit-ontology/Deadlift> rdf:type owl:Class ;
+                                                        owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty <https://github.com/segoedu/crossfit-ontology/hasEquipment> ;
+                                                                                                     owl:someValuesFrom <https://github.com/segoedu/crossfit-ontology/Equipment>
+                                                                                                   ]
+                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty <https://github.com/segoedu/crossfit-ontology/hasEquipment> ;
+                                                                                                     owl:hasValue <https://github.com/segoedu/crossfit-ontology/Barra>
+                                                                                                   ]
+                                                                                                 ) ;
+                                                                              rdf:type owl:Class
+                                                                            ] ;
+                                                        rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Fuerza> ;
+                                                        rdfs:comment "Levantamiento de peso muerto"@es ;
+                                                        rdfs:label "Deadlift"@en ,
+                                                                   "Peso muerto"@es ;
+                                                        rdfs:seeAlso "https://www.youtube.com/watch?v=op9kVnSso6Q" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#DownwardDog
-:DownwardDog rdf:type owl:Class ;
-             rdfs:subClassOf :Estiramiento ;
-             rdfs:comment "Postura del Perro Abajo): Una postura de yoga que estira la espalda y las piernas."@es ;
-             rdfs:label "Postura del Perro Abajo"@es .
+###  https://github.com/segoedu/crossfit-ontology/DownwardDog
+<https://github.com/segoedu/crossfit-ontology/DownwardDog> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Estiramiento> ;
+                                                           rdfs:comment "Postura del Perro Abajo): Una postura de yoga que estira la espalda y las piernas."@es ;
+                                                           rdfs:label "Postura del Perro Abajo"@es .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#EMOM
-:EMOM rdf:type owl:Class ;
-      rdfs:subClassOf :EstiloWOD .
+###  https://github.com/segoedu/crossfit-ontology/EMOM
+<https://github.com/segoedu/crossfit-ontology/EMOM> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/EstiloWOD> ;
+                                                    rdfs:comment "Every minute on the minute"@en ;
+                                                    rdfs:label "EMOM" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#EntrenoWod
-:EntrenoWod rdf:type owl:Class .
+###  https://github.com/segoedu/crossfit-ontology/EntrenoWod
+<https://github.com/segoedu/crossfit-ontology/EntrenoWod> rdf:type owl:Class ;
+                                                          rdfs:comment "Relaciona entrenamientos específicos de cada atleta"@es ;
+                                                          rdfs:label "EntrenoWod" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Equipment
-:Equipment rdf:type owl:Class ;
-           rdfs:comment "Material y equipamiento usado para los diferentes ejercicios"@es ;
-           rdfs:label "Material"@es .
+###  https://github.com/segoedu/crossfit-ontology/Equipment
+<https://github.com/segoedu/crossfit-ontology/Equipment> rdf:type owl:Class ;
+                                                         rdfs:comment "Material y equipamiento usado para los diferentes ejercicios"@es ;
+                                                         rdfs:label "Material"@es .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Escalado
-:Escalado rdf:type owl:Class ;
-          rdfs:subClassOf :WODLevel ;
-          owl:disjointWith :RX .
+###  https://github.com/segoedu/crossfit-ontology/Escalado
+<https://github.com/segoedu/crossfit-ontology/Escalado> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/WODLevel> ;
+                                                        owl:disjointWith <https://github.com/segoedu/crossfit-ontology/RX> ;
+                                                        rdfs:comment "Nivel escalado de WOD, para atletas que se inician"@es ;
+                                                        rdfs:label "Escalado" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#EstiloWOD
-:EstiloWOD rdf:type owl:Class .
+###  https://github.com/segoedu/crossfit-ontology/EstiloWOD
+<https://github.com/segoedu/crossfit-ontology/EstiloWOD> rdf:type owl:Class ;
+                                                         rdfs:comment "Especifica los diferentes tipos de WOD disponibles." ;
+                                                         rdfs:label "EstilOWOD" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Estiramiento
-:Estiramiento rdf:type owl:Class ;
-              rdfs:subClassOf :Exercise .
+###  https://github.com/segoedu/crossfit-ontology/Estiramiento
+<https://github.com/segoedu/crossfit-ontology/Estiramiento> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Exercise> ;
+                                                            rdfs:comment "Ejercicios útiles para estirar"@es ;
+                                                            rdfs:label "Estiramiento" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Exercise
-:Exercise rdf:type owl:Class .
+###  https://github.com/segoedu/crossfit-ontology/Exercise
+<https://github.com/segoedu/crossfit-ontology/Exercise> rdf:type owl:Class ;
+                                                        rdfs:comment "Distintos tipos de ejercicios disponibles"@es ;
+                                                        rdfs:label "Exercise" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#ExerciseWithReps
-:ExerciseWithReps rdf:type owl:Class .
+###  https://github.com/segoedu/crossfit-ontology/ExerciseWithReps
+<https://github.com/segoedu/crossfit-ontology/ExerciseWithReps> rdf:type owl:Class ;
+                                                                rdfs:comment "Relaciona ejercicios y  número de repeticiones para cada WOD"@es ;
+                                                                rdfs:label "ExerciseWithReps" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#ForRounds
-:ForRounds rdf:type owl:Class ;
-           rdfs:subClassOf :EstiloWOD .
+###  https://github.com/segoedu/crossfit-ontology/ForRounds
+<https://github.com/segoedu/crossfit-ontology/ForRounds> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/EstiloWOD> ;
+                                                         rdfs:comment "WODs en los que se especifica el número de rondas" ;
+                                                         rdfs:label "ForRounds" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Fortime
-:Fortime rdf:type owl:Class ;
-         rdfs:subClassOf :EstiloWOD .
+###  https://github.com/segoedu/crossfit-ontology/Fortime
+<https://github.com/segoedu/crossfit-ontology/Fortime> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/EstiloWOD> ;
+                                                       rdfs:comment "WODs en los que se contabiliza el tiempo total de entreno hasta finalizar" ;
+                                                       rdfs:label "ForTime" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Fran
-:Fran rdf:type owl:Class ;
-      owl:equivalentClass [ owl:intersectionOf ( :WOD
-                                                 [ rdf:type owl:Restriction ;
-                                                   owl:onProperty :hasEstiloWOD ;
-                                                   owl:allValuesFrom :ForRounds
-                                                 ]
-                                                 [ rdf:type owl:Restriction ;
-                                                   owl:onProperty :hasExercise ;
-                                                   owl:allValuesFrom [ owl:intersectionOf ( :Pullup
-                                                                                            :Thruster
-                                                                                          ) ;
-                                                                       rdf:type owl:Class
-                                                                     ]
-                                                 ]
-                                               ) ;
-                            rdf:type owl:Class
-                          ] ;
-      rdfs:subClassOf :WOD ;
-      owl:disjointWith :Murph ;
-      rdfs:comment """The workout:
+###  https://github.com/segoedu/crossfit-ontology/Fran
+<https://github.com/segoedu/crossfit-ontology/Fran> rdf:type owl:Class ;
+                                                    owl:equivalentClass [ owl:intersectionOf ( <https://github.com/segoedu/crossfit-ontology/WOD>
+                                                                                               [ rdf:type owl:Restriction ;
+                                                                                                 owl:onProperty <https://github.com/segoedu/crossfit-ontology/hasEstiloWOD> ;
+                                                                                                 owl:allValuesFrom <https://github.com/segoedu/crossfit-ontology/ForRounds>
+                                                                                               ]
+                                                                                               [ rdf:type owl:Restriction ;
+                                                                                                 owl:onProperty <https://github.com/segoedu/crossfit-ontology/hasExercise> ;
+                                                                                                 owl:allValuesFrom [ owl:intersectionOf ( <https://github.com/segoedu/crossfit-ontology/Pullup>
+                                                                                                                                          <https://github.com/segoedu/crossfit-ontology/Thruster>
+                                                                                                                                        ) ;
+                                                                                                                     rdf:type owl:Class
+                                                                                                                   ]
+                                                                                               ]
+                                                                                             ) ;
+                                                                          rdf:type owl:Class
+                                                                        ] ;
+                                                    rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/WOD> ;
+                                                    owl:disjointWith <https://github.com/segoedu/crossfit-ontology/Murph> ;
+                                                    rdfs:comment """The workout:
 
 Three rounds, 21-15- and 9 reps, for time of:
 
     43/30 kg (95 lb) thruster
     Pull-ups""" ;
-      rdfs:label "Fran" ;
-      rdfs:seeAlso "https://www.youtube.com/watch?v=KYaqy4zcAJg&t=3s&ab_channel=CrossFit" .
+                                                    rdfs:label "Fran" ;
+                                                    rdfs:seeAlso "https://www.youtube.com/watch?v=KYaqy4zcAJg&t=3s&ab_channel=CrossFit" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Fuerza
-:Fuerza rdf:type owl:Class ;
-        rdfs:subClassOf :Exercise .
+###  https://github.com/segoedu/crossfit-ontology/Fuerza
+<https://github.com/segoedu/crossfit-ontology/Fuerza> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Exercise> ;
+                                                      rdfs:comment "Ejercicios para el entrenamiento de fuerza"@es ;
+                                                      rdfs:label "Fuerza" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Gimnasio
-:Gimnasio rdf:type owl:Class ;
-          rdfs:subClassOf <http://xmlns.com/foaf/0.1/Organization> .
+###  https://github.com/segoedu/crossfit-ontology/Gimnasio
+<https://github.com/segoedu/crossfit-ontology/Gimnasio> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://xmlns.com/foaf/0.1/organization> ;
+                                                        rdfs:comment "Lugares de entrenamiento"@es ;
+                                                        rdfs:label "Gimnasio"@es .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Gimnástico
-:Gimnástico rdf:type owl:Class ;
-            owl:equivalentClass [ rdf:type owl:Class ;
-                                  owl:complementOf [ rdf:type owl:Restriction ;
-                                                     owl:onProperty :hasEquipment ;
-                                                     owl:someValuesFrom :Equipment
-                                                   ]
-                                ] ;
-            rdfs:subClassOf :Exercise .
+###  https://github.com/segoedu/crossfit-ontology/Gimnástico
+<https://github.com/segoedu/crossfit-ontology/Gimnástico> rdf:type owl:Class ;
+                                                          owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                owl:complementOf [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty <https://github.com/segoedu/crossfit-ontology/hasEquipment> ;
+                                                                                                   owl:someValuesFrom <https://github.com/segoedu/crossfit-ontology/Equipment>
+                                                                                                 ]
+                                                                              ] ;
+                                                          rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Exercise> ;
+                                                          rdfs:comment "Ejercicios de habilidades gimnásticas"@es ;
+                                                          rdfs:label "Gimnástico" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Handstand
-:Handstand rdf:type owl:Class ;
-           rdfs:subClassOf :Gimnástico ;
-           rdfs:label "Handstand"@en ,
-                      "Pino"@es .
+###  https://github.com/segoedu/crossfit-ontology/Handstand
+<https://github.com/segoedu/crossfit-ontology/Handstand> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Gimnástico> ;
+                                                         rdfs:comment "Pino en pared"@es ;
+                                                         rdfs:label "Handstand"@en ,
+                                                                    "Pino"@es .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Intermedio
-:Intermedio rdf:type owl:Class ;
-            owl:equivalentClass [ owl:intersectionOf ( :Atleta
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty :entrena ;
-                                                         owl:someValuesFrom :WOD
-                                                       ]
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty :hasWODLevel ;
-                                                         owl:someValuesFrom :RX
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] ;
-            rdfs:subClassOf :Atleta ;
-            rdfs:comment "Un atleta intermedio es un atleta que ha entrenado al menos una vez y alguno de sus entrenamientos han sido RX" .
+###  https://github.com/segoedu/crossfit-ontology/Intermedio
+<https://github.com/segoedu/crossfit-ontology/Intermedio> rdf:type owl:Class ;
+                                                          owl:equivalentClass [ owl:intersectionOf ( <https://github.com/segoedu/crossfit-ontology/Atleta>
+                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                       owl:onProperty <https://github.com/segoedu/crossfit-ontology/entrena> ;
+                                                                                                       owl:someValuesFrom <https://github.com/segoedu/crossfit-ontology/WOD>
+                                                                                                     ]
+                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                       owl:onProperty <https://github.com/segoedu/crossfit-ontology/hasWODLevel> ;
+                                                                                                       owl:someValuesFrom <https://github.com/segoedu/crossfit-ontology/RX>
+                                                                                                     ]
+                                                                                                   ) ;
+                                                                                rdf:type owl:Class
+                                                                              ] ;
+                                                          rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Atleta> ;
+                                                          rdfs:comment "Un atleta intermedio es un atleta que ha entrenado al menos una vez y alguno de sus entrenamientos han sido RX" ;
+                                                          rdfs:label "Intermedio"@es .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Intervalo
-:Intervalo rdf:type owl:Class ;
-           rdfs:subClassOf <http://www.w3.org/2006/time#Interval> .
+###  https://github.com/segoedu/crossfit-ontology/Intervalo
+<https://github.com/segoedu/crossfit-ontology/Intervalo> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.w3.org/2006/time#Interval> ;
+                                                         rdfs:comment "Tiempo dedicado a la finalización del entrenamiento de un WOD por parte de un atleta"@es ;
+                                                         rdfs:label "Interval" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#KettlebellSwing
-:KettlebellSwing rdf:type owl:Class ;
-                 rdfs:subClassOf :Fuerza ;
-                 rdfs:label "Balanceo de pesa rusa"@es ,
-                            "Kettlebell Swing"@en ,
-                            """The Kettlebell Swing: is one of most popular movements in crossfit, and it's fairly.
+###  https://github.com/segoedu/crossfit-ontology/KettlebellSwing
+<https://github.com/segoedu/crossfit-ontology/KettlebellSwing> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Fuerza> ;
+                                                               rdfs:comment """The Kettlebell Swing: is one of most popular movements in crossfit, and it's fairly.
 
 The Kettlebell Swing can be used by professional athletes and beginners, to strengthen the body and prepared for more harder workouts"""@en ;
-                 rdfs:seeAlso "https://www.youtube.com/watch?v=vdezTMulJ-k" .
+                                                               rdfs:label "Balanceo de pesa rusa"@es ,
+                                                                          "Kettlebell Swing"@en ;
+                                                               rdfs:seeAlso "https://www.youtube.com/watch?v=vdezTMulJ-k" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Murph
-:Murph rdf:type owl:Class ;
-       owl:equivalentClass [ owl:intersectionOf ( :WOD
-                                                  [ rdf:type owl:Restriction ;
-                                                    owl:onProperty :hasEstiloWOD ;
-                                                    owl:allValuesFrom :Fortime
-                                                  ]
-                                                  [ rdf:type owl:Restriction ;
-                                                    owl:onProperty :hasExercise ;
-                                                    owl:allValuesFrom [ owl:intersectionOf ( :AirSquat
-                                                                                             :Pullup
-                                                                                             :Pushup
-                                                                                           ) ;
-                                                                        rdf:type owl:Class
-                                                                      ]
-                                                  ]
-                                                ) ;
-                             rdf:type owl:Class
-                           ] ;
-       rdfs:subClassOf :WOD ;
-       rdfs:comment """The workout:
+###  https://github.com/segoedu/crossfit-ontology/Murph
+<https://github.com/segoedu/crossfit-ontology/Murph> rdf:type owl:Class ;
+                                                     owl:equivalentClass [ owl:intersectionOf ( <https://github.com/segoedu/crossfit-ontology/WOD>
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <https://github.com/segoedu/crossfit-ontology/hasEstiloWOD> ;
+                                                                                                  owl:allValuesFrom <https://github.com/segoedu/crossfit-ontology/Fortime>
+                                                                                                ]
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <https://github.com/segoedu/crossfit-ontology/hasExercise> ;
+                                                                                                  owl:allValuesFrom [ owl:intersectionOf ( <https://github.com/segoedu/crossfit-ontology/AirSquat>
+                                                                                                                                           <https://github.com/segoedu/crossfit-ontology/Pullup>
+                                                                                                                                           <https://github.com/segoedu/crossfit-ontology/Pushup>
+                                                                                                                                         ) ;
+                                                                                                                      rdf:type owl:Class
+                                                                                                                    ]
+                                                                                                ]
+                                                                                              ) ;
+                                                                           rdf:type owl:Class
+                                                                         ] ;
+                                                     rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/WOD> ;
+                                                     rdfs:comment """The workout:
 
     1 mile run
     100 pull-ups
@@ -598,84 +779,89 @@ ESCALADO
 👉 50 Push-Ups – flexiones 
 👉 75 Air Squats – sentadillas al aire 
 👉 Carrera 400 m""" ;
-       rdfs:label "Murph" ;
-       rdfs:seeAlso "https://www.youtube.com/watch?v=muGj0XrH93w" .
+                                                     rdfs:label "Murph" ;
+                                                     rdfs:seeAlso "https://www.youtube.com/watch?v=muGj0XrH93w" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#MuscleUp
-:MuscleUp rdf:type owl:Class ;
-          rdfs:subClassOf :Gimnástico ;
-          rdfs:comment "Bar Muscle-Up"@en ,
-                       """This exercise is great for developing high-speed power of the upper body. Besides main strength and stamina, Bar Muscle-Up develops coordination as well. This exercises are classified as technically complex, therefore it is recommended to start studying it after mastering the preparatory exercises.
+###  https://github.com/segoedu/crossfit-ontology/MuscleUp
+<https://github.com/segoedu/crossfit-ontology/MuscleUp> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Gimnástico> ;
+                                                        rdfs:comment "Bar Muscle-Up"@en ,
+                                                                     """This exercise is great for developing high-speed power of the upper body. Besides main strength and stamina, Bar Muscle-Up develops coordination as well. This exercises are classified as technically complex, therefore it is recommended to start studying it after mastering the preparatory exercises.
 
 In the bar muscle-up, the athlete must begin with or pass though hand below the bar, with the arms fully extended and the feet off the ground. Kipping the muscle-up is acceptable, but pull-overs, rolls to support and glide kips are not permitted. The heels may not rise above the height of the bar during the kip.
 
 At the top, the elbows must be fully locked while the athlete is in the support position above the bar with the shoulders over or in front of the bar. Athletes must pass through some portion of a dip-to-lockout over the bar. Only the hands, and no other part of the arm, may touch the pull-up bar to assist the athlete in completing the rep. One on top, the hands must stay in contact with the bar, and athletes must maintain support with their arms. Removing the hands and resting while on top of the bar is not allowed. Athletes may wrap tape around the pull-up bar OR wear hand protection (gymnastics-style, grips, gloves, etc.), but they may not tape the bar AND wear hand protection."""@en ,
-                       "Un movimiento que combina una dominada y una flexión de tríceps para pasar por encima de una barra o anillas."@es .
+                                                                     "Un movimiento que combina una dominada y una flexión de tríceps para pasar por encima de una barra o anillas."@es ;
+                                                        rdfs:label "Muscle Up" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Músculo
-:Músculo rdf:type owl:Class .
+###  https://github.com/segoedu/crossfit-ontology/Músculo
+<https://github.com/segoedu/crossfit-ontology/Músculo> rdf:type owl:Class ;
+                                                       rdfs:comment "Músculos involucrados en la realización de un ejercicio"@es ;
+                                                       rdfs:label "Muscle"@en ,
+                                                                  "Músculo"@es .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#PigeonPose
-:PigeonPose rdf:type owl:Class ;
-            rdfs:subClassOf :Estiramiento ;
-            rdfs:comment "Estiramiento de caderas y glúteos."@es ;
-            rdfs:label "Postura de la Paloma"@es .
+###  https://github.com/segoedu/crossfit-ontology/PigeonPose
+<https://github.com/segoedu/crossfit-ontology/PigeonPose> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Estiramiento> ;
+                                                          rdfs:comment "Estiramiento de caderas y glúteos."@es ;
+                                                          rdfs:label "Postura de la Paloma"@es .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Pistol
-:Pistol rdf:type owl:Class ;
-        rdfs:subClassOf :Gimnástico ;
-        rdfs:comment "Pistol Squat can be considered basic bodyweight lower body workouts. This exercise is one of the most difficult exercises, even for advanced exercisers. Easier versions of this movement include partial reps or self assistance on horizontal bar, from raised rear leg, or with one leg wrapped behind supporting leg. Other squatting or split squat movements can also be performed. Self-assisted Single Leg Squat (leg wrapped) Self-assisted Single Leg Squat (bar) Leg Raised Back Single Leg Split Squat"@en ,
-                     "Un tipo de sentadilla en una sola pierna."@es ;
-        rdfs:label "Pistol Squat"@en ;
-        rdfs:seeAlso "https://www.youtube.com/watch?v=qDcniqddTeE" .
+###  https://github.com/segoedu/crossfit-ontology/Pistol
+<https://github.com/segoedu/crossfit-ontology/Pistol> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Gimnástico> ;
+                                                      rdfs:comment "Pistol Squat can be considered basic bodyweight lower body workouts. This exercise is one of the most difficult exercises, even for advanced exercisers. Easier versions of this movement include partial reps or self assistance on horizontal bar, from raised rear leg, or with one leg wrapped behind supporting leg. Other squatting or split squat movements can also be performed. Self-assisted Single Leg Squat (leg wrapped) Self-assisted Single Leg Squat (bar) Leg Raised Back Single Leg Split Squat"@en ,
+                                                                   "Un tipo de sentadilla en una sola pierna."@es ;
+                                                      rdfs:label "Pistol Squat"@en ;
+                                                      rdfs:seeAlso "https://www.youtube.com/watch?v=qDcniqddTeE" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Plank
-:Plank rdf:type owl:Class ;
-       rdfs:subClassOf :Abdomen ;
-       rdfs:comment "Un ejercicio clásico para fortalecer los músculos abdominales."@es ;
-       rdfs:label "Plancha"@es .
+###  https://github.com/segoedu/crossfit-ontology/Plank
+<https://github.com/segoedu/crossfit-ontology/Plank> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Abdomen> ;
+                                                     rdfs:comment "Un ejercicio clásico para fortalecer los músculos abdominales."@es ;
+                                                     rdfs:label "Plancha"@es .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Profesional
-:Profesional rdf:type owl:Class ;
-             owl:equivalentClass [ owl:intersectionOf ( :Atleta
-                                                        [ rdf:type owl:Restriction ;
-                                                          owl:onProperty :hasWODLevel ;
-                                                          owl:allValuesFrom :RX
-                                                        ]
-                                                        [ rdf:type owl:Restriction ;
-                                                          owl:onProperty :entrena ;
-                                                          owl:minCardinality "5"^^xsd:nonNegativeInteger
-                                                        ]
-                                                      ) ;
-                                   rdf:type owl:Class
-                                 ] ;
-             rdfs:subClassOf :Atleta ;
-             rdfs:comment "Un profesional es un atleta que ha entrenado al menos 5 veces y todos sus entrenamientos han sido RX" .
+###  https://github.com/segoedu/crossfit-ontology/Profesional
+<https://github.com/segoedu/crossfit-ontology/Profesional> rdf:type owl:Class ;
+                                                           owl:equivalentClass [ owl:intersectionOf ( <https://github.com/segoedu/crossfit-ontology/Atleta>
+                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                        owl:onProperty <https://github.com/segoedu/crossfit-ontology/hasWODLevel> ;
+                                                                                                        owl:allValuesFrom <https://github.com/segoedu/crossfit-ontology/RX>
+                                                                                                      ]
+                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                        owl:onProperty <https://github.com/segoedu/crossfit-ontology/entrena> ;
+                                                                                                        owl:minCardinality "5"^^xsd:nonNegativeInteger
+                                                                                                      ]
+                                                                                                    ) ;
+                                                                                 rdf:type owl:Class
+                                                                               ] ;
+                                                           rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Atleta> ;
+                                                           rdfs:comment "Un profesional es un atleta que ha entrenado al menos 5 veces y todos sus entrenamientos han sido RX" ;
+                                                           rdfs:label "Pro" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Pullup
-:Pullup rdf:type owl:Class ;
-        rdfs:subClassOf :Gimnástico ;
-        rdfs:comment """The CrossFit Pull-Ups same are known as Kipping Pull-Ups it's one of fundamental CrossFit movements. It's very technical movement wich needed from athlete good coordination and power.
+###  https://github.com/segoedu/crossfit-ontology/Pullup
+<https://github.com/segoedu/crossfit-ontology/Pullup> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Gimnástico> ;
+                                                      rdfs:comment """The CrossFit Pull-Ups same are known as Kipping Pull-Ups it's one of fundamental CrossFit movements. It's very technical movement wich needed from athlete good coordination and power.
 
 This is a standard chin-over-bar pull-up. Dead hang, kipping or butterfly pull-ups, are permitted as long as all the requirements are met. The arms must be fully extended at the bottom with the feet off the ground.
 
 At the top of the movement, the chin must break the horizontal plane of the bar. Athletes may wrap tape around the pull-up bar OR wear hand protection (gymnastics-style grips, gloves, etc.), but they may not tape the bar AND wear hand protection."""@en ;
-        rdfs:label "Dominada"@es ,
-                   "Pull Up"@en ;
-        rdfs:seeAlso "https://www.youtube.com/watch?v=r45xLlH7r_M" .
+                                                      rdfs:label "Dominada"@es ,
+                                                                 "Pull Up"@en ;
+                                                      rdfs:seeAlso "https://www.youtube.com/watch?v=r45xLlH7r_M" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Pushup
-:Pushup rdf:type owl:Class ;
-        rdfs:subClassOf :Fuerza ;
-        rdfs:comment """The Push Up is a fundamental movement of each fitness program, you can perform it anywhere without special equipment.
+###  https://github.com/segoedu/crossfit-ontology/Pushup
+<https://github.com/segoedu/crossfit-ontology/Pushup> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Fuerza> ;
+                                                      rdfs:comment """The Push Up is a fundamental movement of each fitness program, you can perform it anywhere without special equipment.
 
 The main Benefits of push ups:
 - Good workout for upper body muscles 
@@ -683,199 +869,188 @@ The main Benefits of push ups:
 - You can do it anywhere
 - Improve your posture
 - Burn Calories and Fat"""@en ;
-        rdfs:label "Flexión"@es ,
-                   "Push Up"@en ;
-        rdfs:seeAlso "https://www.youtube.com/watch?v=_l3ySVKYVJ8" .
+                                                      rdfs:label "Flexión"@es ,
+                                                                 "Push Up"@en ;
+                                                      rdfs:seeAlso "https://www.youtube.com/watch?v=_l3ySVKYVJ8" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#RX
-:RX rdf:type owl:Class ;
-    rdfs:subClassOf :WODLevel .
+###  https://github.com/segoedu/crossfit-ontology/RX
+<https://github.com/segoedu/crossfit-ontology/RX> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/WODLevel> ;
+                                                  rdfs:comment "Nivel exigido"@es ;
+                                                  rdfs:label "RX" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Rookie
-:Rookie rdf:type owl:Class ;
-        owl:equivalentClass [ owl:intersectionOf ( :Atleta
-                                                   [ rdf:type owl:Restriction ;
-                                                     owl:onProperty :entrena ;
-                                                     owl:someValuesFrom :WOD
-                                                   ]
-                                                   [ rdf:type owl:Restriction ;
-                                                     owl:onProperty :hasWODLevel ;
-                                                     owl:allValuesFrom :Escalado
-                                                   ]
-                                                 ) ;
-                              rdf:type owl:Class
-                            ] ;
-        rdfs:subClassOf :Atleta ;
-        rdfs:comment "Un rookie es un atleta que ha entrenado al menos una vez y todos sus entrenamientos han sido Escalados" .
+###  https://github.com/segoedu/crossfit-ontology/Rookie
+<https://github.com/segoedu/crossfit-ontology/Rookie> rdf:type owl:Class ;
+                                                      owl:equivalentClass [ owl:intersectionOf ( <https://github.com/segoedu/crossfit-ontology/Atleta>
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty <https://github.com/segoedu/crossfit-ontology/entrena> ;
+                                                                                                   owl:someValuesFrom <https://github.com/segoedu/crossfit-ontology/WOD>
+                                                                                                 ]
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty <https://github.com/segoedu/crossfit-ontology/hasWODLevel> ;
+                                                                                                   owl:allValuesFrom <https://github.com/segoedu/crossfit-ontology/Escalado>
+                                                                                                 ]
+                                                                                               ) ;
+                                                                            rdf:type owl:Class
+                                                                          ] ;
+                                                      rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Atleta> ;
+                                                      rdfs:comment "Un rookie es un atleta que ha entrenado al menos una vez y todos sus entrenamientos han sido Escalados" ;
+                                                      rdfs:label "Novato"@es .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Row
-:Row rdf:type owl:Class ;
-     rdfs:subClassOf :Cardio ;
-     rdfs:comment "Utilizar una máquina de remo para ejercicios cardiovasculares."@es ;
-     rdfs:label "Remo"@es .
+###  https://github.com/segoedu/crossfit-ontology/Row
+<https://github.com/segoedu/crossfit-ontology/Row> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Cardio> ;
+                                                   rdfs:comment "Utilizar una máquina de remo para ejercicios cardiovasculares."@es ;
+                                                   rdfs:label "Remo"@es .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Run
-:Run rdf:type owl:Class ;
-     owl:equivalentClass [ rdf:type owl:Class ;
-                           owl:complementOf [ rdf:type owl:Restriction ;
-                                              owl:onProperty :hasEquipment ;
-                                              owl:someValuesFrom :Equipment
-                                            ]
-                         ] ;
-     rdfs:subClassOf :Cardio ;
-     rdfs:comment "Correr distancias variadas como parte de un WOD o entrenamiento."@es ;
-     rdfs:label "Correr"@es .
+###  https://github.com/segoedu/crossfit-ontology/Run
+<https://github.com/segoedu/crossfit-ontology/Run> rdf:type owl:Class ;
+                                                   owl:equivalentClass [ rdf:type owl:Class ;
+                                                                         owl:complementOf [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <https://github.com/segoedu/crossfit-ontology/hasEquipment> ;
+                                                                                            owl:someValuesFrom <https://github.com/segoedu/crossfit-ontology/Equipment>
+                                                                                          ]
+                                                                       ] ;
+                                                   rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Cardio> ;
+                                                   rdfs:comment "Correr distancias variadas como parte de un WOD o entrenamiento."@es ;
+                                                   rdfs:label "Correr"@es .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#SeatedForwardBend
-:SeatedForwardBend rdf:type owl:Class ;
-                   rdfs:subClassOf :Estiramiento ;
-                   rdfs:comment "Estiramiento de las piernas y la espalda"@es ;
-                   rdfs:label "Flexión hacia Adelante Sentado"@es .
+###  https://github.com/segoedu/crossfit-ontology/SeatedForwardBend
+<https://github.com/segoedu/crossfit-ontology/SeatedForwardBend> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Estiramiento> ;
+                                                                 rdfs:comment "Estiramiento de las piernas y la espalda"@es ;
+                                                                 rdfs:label "Flexión hacia Adelante Sentado"@es .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#SitUp
-:SitUp rdf:type owl:Class ;
-       owl:equivalentClass [ rdf:type owl:Class ;
-                             owl:complementOf [ rdf:type owl:Restriction ;
-                                                owl:onProperty :hasEquipment ;
-                                                owl:someValuesFrom :Equipment
-                                              ]
-                           ] ;
-       rdfs:subClassOf :Abdomen ;
-       rdfs:comment "Un ejercicio clásico para fortalecer los músculos abdominales."@es ;
-       rdfs:label "Sit Up"@es .
+###  https://github.com/segoedu/crossfit-ontology/SitUp
+<https://github.com/segoedu/crossfit-ontology/SitUp> rdf:type owl:Class ;
+                                                     owl:equivalentClass [ rdf:type owl:Class ;
+                                                                           owl:complementOf [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <https://github.com/segoedu/crossfit-ontology/hasEquipment> ;
+                                                                                              owl:someValuesFrom <https://github.com/segoedu/crossfit-ontology/Equipment>
+                                                                                            ]
+                                                                         ] ;
+                                                     rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Abdomen> ;
+                                                     rdfs:comment "Un ejercicio clásico para fortalecer los músculos abdominales."@es ;
+                                                     rdfs:label "Sit Up"@es .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Snatch
-:Snatch rdf:type owl:Class ;
-        owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                     owl:onProperty :hasEquipment ;
-                                                     owl:someValuesFrom :Equipment
-                                                   ]
-                                                   [ rdf:type owl:Restriction ;
-                                                     owl:onProperty :hasEquipment ;
-                                                     owl:hasValue :Barra
-                                                   ]
-                                                 ) ;
-                              rdf:type owl:Class
-                            ] ;
-        rdfs:subClassOf :Fuerza ;
-        rdfs:comment "For the snatch, the lifter takes the barbell from the floor to an overhead position in a single motion. it’s one of the most explosive and athletic movements in all of sports. Looks can be deceiving, though; the snatch is a finesse lift. When executed perfectly, heavy weight feels light."@en ;
-        rdfs:label "Arrancada"@es ,
-                   "Snatch"@en ;
-        rdfs:seeAlso "https://www.youtube.com/watch?v=9xQp2sldyts" .
+###  https://github.com/segoedu/crossfit-ontology/Snatch
+<https://github.com/segoedu/crossfit-ontology/Snatch> rdf:type owl:Class ;
+                                                      owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty <https://github.com/segoedu/crossfit-ontology/hasEquipment> ;
+                                                                                                   owl:someValuesFrom <https://github.com/segoedu/crossfit-ontology/Equipment>
+                                                                                                 ]
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty <https://github.com/segoedu/crossfit-ontology/hasEquipment> ;
+                                                                                                   owl:hasValue <https://github.com/segoedu/crossfit-ontology/Barra>
+                                                                                                 ]
+                                                                                               ) ;
+                                                                            rdf:type owl:Class
+                                                                          ] ;
+                                                      rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Fuerza> ;
+                                                      rdfs:comment "For the snatch, the lifter takes the barbell from the floor to an overhead position in a single motion. it’s one of the most explosive and athletic movements in all of sports. Looks can be deceiving, though; the snatch is a finesse lift. When executed perfectly, heavy weight feels light."@en ;
+                                                      rdfs:label "Arrancada"@es ,
+                                                                 "Snatch"@en ;
+                                                      rdfs:seeAlso "https://www.youtube.com/watch?v=9xQp2sldyts" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Thruster
-:Thruster rdf:type owl:Class ;
-          owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                       owl:onProperty :hasEquipment ;
-                                                       owl:someValuesFrom :Equipment
-                                                     ]
-                                                     [ rdf:type owl:Restriction ;
-                                                       owl:onProperty :hasEquipment ;
-                                                       owl:hasValue :Barra
-                                                     ]
-                                                   ) ;
-                                rdf:type owl:Class
-                              ] ;
-          rdfs:subClassOf :Fuerza ;
-          rdfs:comment "The thruster is a serious compound (utilizes more than one joint) exercise that combines a clean, front squat and push-press." ;
-          rdfs:label "Thrusters"@en ,
-                     "Thrusters"@es ;
-          rdfs:seeAlso "https://www.youtube.com/watch?v=aea5BGj9a8Y" .
+###  https://github.com/segoedu/crossfit-ontology/Thruster
+<https://github.com/segoedu/crossfit-ontology/Thruster> rdf:type owl:Class ;
+                                                        owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty <https://github.com/segoedu/crossfit-ontology/hasEquipment> ;
+                                                                                                     owl:someValuesFrom <https://github.com/segoedu/crossfit-ontology/Equipment>
+                                                                                                   ]
+                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty <https://github.com/segoedu/crossfit-ontology/hasEquipment> ;
+                                                                                                     owl:hasValue <https://github.com/segoedu/crossfit-ontology/Barra>
+                                                                                                   ]
+                                                                                                 ) ;
+                                                                              rdf:type owl:Class
+                                                                            ] ;
+                                                        rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Fuerza> ;
+                                                        rdfs:comment "The thruster is a serious compound (utilizes more than one joint) exercise that combines a clean, front squat and push-press." ;
+                                                        rdfs:label "Thrusters"@en ,
+                                                                   "Thrusters"@es ;
+                                                        rdfs:seeAlso "https://www.youtube.com/watch?v=aea5BGj9a8Y" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#VUp
-:VUp rdf:type owl:Class ;
-     owl:equivalentClass [ rdf:type owl:Class ;
-                           owl:complementOf [ rdf:type owl:Restriction ;
-                                              owl:onProperty :hasEquipment ;
-                                              owl:someValuesFrom :Equipment
-                                            ]
-                         ] ;
-     rdfs:subClassOf :Abdomen ;
-     rdfs:comment "The V-up is an ab exercise that works the entire rectus abdominis which is what most people refer to as the “6 pack”. It basically involves folding your legs and upper body into a V shape in order to engage all your ab muscles." ;
-     rdfs:label "V Up"@en ;
-     rdfs:seeAlso "https://www.youtube.com/watch?v=Mk4zCq9b6hU" .
+###  https://github.com/segoedu/crossfit-ontology/VUp
+<https://github.com/segoedu/crossfit-ontology/VUp> rdf:type owl:Class ;
+                                                   owl:equivalentClass [ rdf:type owl:Class ;
+                                                                         owl:complementOf [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <https://github.com/segoedu/crossfit-ontology/hasEquipment> ;
+                                                                                            owl:someValuesFrom <https://github.com/segoedu/crossfit-ontology/Equipment>
+                                                                                          ]
+                                                                       ] ;
+                                                   rdfs:subClassOf <https://github.com/segoedu/crossfit-ontology/Abdomen> ;
+                                                   rdfs:comment "The V-up is an ab exercise that works the entire rectus abdominis which is what most people refer to as the “6 pack”. It basically involves folding your legs and upper body into a V shape in order to engage all your ab muscles." ;
+                                                   rdfs:label "V Up"@en ;
+                                                   rdfs:seeAlso "https://www.youtube.com/watch?v=Mk4zCq9b6hU" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#WOD
-:WOD rdf:type owl:Class .
+###  https://github.com/segoedu/crossfit-ontology/WOD
+<https://github.com/segoedu/crossfit-ontology/WOD> rdf:type owl:Class ;
+                                                   rdfs:comment "Work Of Day" ;
+                                                   rdfs:label "WOD" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#WODLevel
-:WODLevel rdf:type owl:Class .
+###  https://github.com/segoedu/crossfit-ontology/WODLevel
+<https://github.com/segoedu/crossfit-ontology/WODLevel> rdf:type owl:Class ;
+                                                        rdfs:comment "Nivel de WOD"@es ;
+                                                        rdfs:label "WODLevel" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#food:FoodProduct
-:food:FoodProduct rdf:type owl:Class ;
-                  rdfs:isDefinedBy "http://data.lirmm.fr/ontologies/food#FoodProduct" ;
-                  rdfs:seeAlso "https://foodon.org/design/foodon-structure/" .
-
-
-###  http://www.w3.org/2006/time#DateTimeDescription
-<http://www.w3.org/2006/time#DateTimeDescription> rdf:type owl:Class ;
-                                                  rdfs:isDefinedBy "https://www.w3.org/TR/owl-time/#time:DateTimeDescription" .
-
-
-###  http://www.w3.org/2006/time#Interval
-<http://www.w3.org/2006/time#Interval> rdf:type owl:Class ;
-                                       rdfs:isDefinedBy "https://www.w3.org/TR/owl-time/#time:Interval" .
-
-
-###  http://xmlns.com/foaf/0.1/Organization
-<http://xmlns.com/foaf/0.1/Organization> rdf:type owl:Class ;
-                                         rdfs:isDefinedBy "http://xmlns.com/foaf/0.1/#term_Organization" .
-
-
-###  http://xmlns.com/foaf/0.1/person
-<http://xmlns.com/foaf/0.1/person> rdf:type owl:Class ;
-                                   rdfs:isDefinedBy "https://lov.linkeddata.es/dataset/lov/vocabs/foaf" .
+###  https://github.com/segoedu/crossfit-ontology/food:FoodProduct
+<https://github.com/segoedu/crossfit-ontology/food:FoodProduct> rdf:type owl:Class ;
+                                                                rdfs:comment "Food Product" ;
+                                                                rdfs:isDefinedBy "http://data.lirmm.fr/ontologies/food#FoodProduct" ;
+                                                                rdfs:label "food:FoodProduct" ;
+                                                                rdfs:seeAlso "https://foodon.org/design/foodon-structure/" .
 
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Barra
-:Barra rdf:type owl:NamedIndividual ,
-                :Equipment .
+###  https://github.com/segoedu/crossfit-ontology/Barra
+<https://github.com/segoedu/crossfit-ontology/Barra> rdf:type owl:NamedIndividual ,
+                                                              <https://github.com/segoedu/crossfit-ontology/Equipment> .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Cajones
-:Cajones rdf:type owl:NamedIndividual ,
-                  :Equipment .
+###  https://github.com/segoedu/crossfit-ontology/Cajones
+<https://github.com/segoedu/crossfit-ontology/Cajones> rdf:type owl:NamedIndividual ,
+                                                                <https://github.com/segoedu/crossfit-ontology/Equipment> .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Comba
-:Comba rdf:type owl:NamedIndividual ,
-                :Equipment .
+###  https://github.com/segoedu/crossfit-ontology/Comba
+<https://github.com/segoedu/crossfit-ontology/Comba> rdf:type owl:NamedIndividual ,
+                                                              <https://github.com/segoedu/crossfit-ontology/Equipment> .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Mancuerna
-:Mancuerna rdf:type owl:NamedIndividual ,
-                    :Equipment .
+###  https://github.com/segoedu/crossfit-ontology/Mancuerna
+<https://github.com/segoedu/crossfit-ontology/Mancuerna> rdf:type owl:NamedIndividual ,
+                                                                  <https://github.com/segoedu/crossfit-ontology/Equipment> .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#PesaRusa
-:PesaRusa rdf:type owl:NamedIndividual ,
-                   :Equipment .
+###  https://github.com/segoedu/crossfit-ontology/PesaRusa
+<https://github.com/segoedu/crossfit-ontology/PesaRusa> rdf:type owl:NamedIndividual ,
+                                                                 <https://github.com/segoedu/crossfit-ontology/Equipment> .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Rack
-:Rack rdf:type owl:NamedIndividual ,
-               :Equipment .
+###  https://github.com/segoedu/crossfit-ontology/Rack
+<https://github.com/segoedu/crossfit-ontology/Rack> rdf:type owl:NamedIndividual ,
+                                                             <https://github.com/segoedu/crossfit-ontology/Equipment> .
 
 
-###  http://www.semanticweb.org/user/ontologies/2023/10/crossfit#Rope
-:Rope rdf:type owl:NamedIndividual ,
-               :Equipment .
+###  https://github.com/segoedu/crossfit-ontology/Rope
+<https://github.com/segoedu/crossfit-ontology/Rope> rdf:type owl:NamedIndividual ,
+                                                             <https://github.com/segoedu/crossfit-ontology/Equipment> .
 
 
 #################################################################
@@ -883,87 +1058,87 @@ The main Benefits of push ups:
 #################################################################
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :AMRAP
-                :EMOM
-                :ForRounds
-                :Fortime
+  owl:members ( <https://github.com/segoedu/crossfit-ontology/AMRAP>
+                <https://github.com/segoedu/crossfit-ontology/EMOM>
+                <https://github.com/segoedu/crossfit-ontology/ForRounds>
+                <https://github.com/segoedu/crossfit-ontology/Fortime>
               )
 ] .
 
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :AirSquat
-                :AssaultBike
-                :Burpee
-                :CatCowStretch
-                :ChildsPose
-                :Clean
-                :DU
-                :Deadlift
-                :DownwardDog
-                :Handstand
-                :KettlebellSwing
-                :MuscleUp
-                :PigeonPose
-                :Pistol
-                :Plank
-                :Pullup
-                :Pushup
-                :Row
-                :Run
-                :SeatedForwardBend
-                :SitUp
-                :Snatch
-                :Thruster
-                :VUp
+  owl:members ( <https://github.com/segoedu/crossfit-ontology/AirSquat>
+                <https://github.com/segoedu/crossfit-ontology/AssaultBike>
+                <https://github.com/segoedu/crossfit-ontology/Burpee>
+                <https://github.com/segoedu/crossfit-ontology/CatCowStretch>
+                <https://github.com/segoedu/crossfit-ontology/ChildsPose>
+                <https://github.com/segoedu/crossfit-ontology/Clean>
+                <https://github.com/segoedu/crossfit-ontology/DU>
+                <https://github.com/segoedu/crossfit-ontology/Deadlift>
+                <https://github.com/segoedu/crossfit-ontology/DownwardDog>
+                <https://github.com/segoedu/crossfit-ontology/Handstand>
+                <https://github.com/segoedu/crossfit-ontology/KettlebellSwing>
+                <https://github.com/segoedu/crossfit-ontology/MuscleUp>
+                <https://github.com/segoedu/crossfit-ontology/PigeonPose>
+                <https://github.com/segoedu/crossfit-ontology/Pistol>
+                <https://github.com/segoedu/crossfit-ontology/Plank>
+                <https://github.com/segoedu/crossfit-ontology/Pullup>
+                <https://github.com/segoedu/crossfit-ontology/Pushup>
+                <https://github.com/segoedu/crossfit-ontology/Row>
+                <https://github.com/segoedu/crossfit-ontology/Run>
+                <https://github.com/segoedu/crossfit-ontology/SeatedForwardBend>
+                <https://github.com/segoedu/crossfit-ontology/SitUp>
+                <https://github.com/segoedu/crossfit-ontology/Snatch>
+                <https://github.com/segoedu/crossfit-ontology/Thruster>
+                <https://github.com/segoedu/crossfit-ontology/VUp>
               )
 ] .
 
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :AirSquat
-                :Clean
-                :Deadlift
-                :KettlebellSwing
-                :Pushup
-                :Snatch
-                :Thruster
+  owl:members ( <https://github.com/segoedu/crossfit-ontology/AirSquat>
+                <https://github.com/segoedu/crossfit-ontology/Clean>
+                <https://github.com/segoedu/crossfit-ontology/Deadlift>
+                <https://github.com/segoedu/crossfit-ontology/KettlebellSwing>
+                <https://github.com/segoedu/crossfit-ontology/Pushup>
+                <https://github.com/segoedu/crossfit-ontology/Snatch>
+                <https://github.com/segoedu/crossfit-ontology/Thruster>
               )
 ] .
 
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :AssaultBike
-                :Burpee
-                :DU
-                :Row
-                :Run
+  owl:members ( <https://github.com/segoedu/crossfit-ontology/AssaultBike>
+                <https://github.com/segoedu/crossfit-ontology/Burpee>
+                <https://github.com/segoedu/crossfit-ontology/DU>
+                <https://github.com/segoedu/crossfit-ontology/Row>
+                <https://github.com/segoedu/crossfit-ontology/Run>
               )
 ] .
 
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :CatCowStretch
-                :ChildsPose
-                :DownwardDog
-                :PigeonPose
-                :SeatedForwardBend
+  owl:members ( <https://github.com/segoedu/crossfit-ontology/CatCowStretch>
+                <https://github.com/segoedu/crossfit-ontology/ChildsPose>
+                <https://github.com/segoedu/crossfit-ontology/DownwardDog>
+                <https://github.com/segoedu/crossfit-ontology/PigeonPose>
+                <https://github.com/segoedu/crossfit-ontology/SeatedForwardBend>
               )
 ] .
 
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :Intermedio
-                :Profesional
-                :Rookie
+  owl:members ( <https://github.com/segoedu/crossfit-ontology/Intermedio>
+                <https://github.com/segoedu/crossfit-ontology/Profesional>
+                <https://github.com/segoedu/crossfit-ontology/Rookie>
               )
 ] .
 
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :Plank
-                :SitUp
-                :VUp
+  owl:members ( <https://github.com/segoedu/crossfit-ontology/Plank>
+                <https://github.com/segoedu/crossfit-ontology/SitUp>
+                <https://github.com/segoedu/crossfit-ontology/VUp>
               )
 ] .
 
