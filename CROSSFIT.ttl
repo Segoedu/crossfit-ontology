@@ -1,12 +1,10 @@
-@prefix : <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/> .
+@prefix crossfit: <https://github.com/segoedu/crossfit-ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix crossfit: <http://www.semanticweb.org/user/ontologies/2023/10/untitled-ontology-23#crossfit:> .
-@prefix untitled-ontology-23: <http://www.semanticweb.org/user/ontologies/2023/10/untitled-ontology-23#> .
-@base <http://www.semanticweb.org/user/ontologies/2023/10/crossfit/> .
+@base <https://github.com/segoedu/crossfit-ontology/> .
 
 <https://github.com/segoedu/crossfit-ontology> rdf:type owl:Ontology ;
                                                 <http://purl.org/dc/elements/1.1/created> "2023-11-14T09:00:00"^^xsd:dateTime ;
