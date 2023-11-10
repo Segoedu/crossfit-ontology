@@ -1,0 +1,1482 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2023/10/crossfit#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2023/10/crossfit"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit">
+        <dc:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-14T09:00:00</dc:created>
+        <dc:creator>Eduardo de la Cruz &lt;https://segoedu.com/&gt;</dc:creator>
+        <dc:description xml:lang="es">La ontología del CrossFit modela de manera estructurada los movimientos, ejercicios, entrenamientos diarios (WODs), atletas, gimnasios y aspectos nutricionales relacionados con esta disciplina de acondicionamiento físico, permitiendo un análisis detallado de las relaciones y características específicas de cada elemento en el dominio del CrossFit.</dc:description>
+        <dc:title xml:lang="en">Crossfit ontology</dc:title>
+        <dc:title xml:lang="es">Ontología del Crossfit</dc:title>
+        <owl:versionInfo>0.0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/created"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- https://schema.org/schema:address -->
+
+
+    <rdfs:Datatype rdf:about="https://schema.org/schema:address"/>
+    
+
+
+    <!-- https://schema.org/schema:telephone -->
+
+
+    <rdfs:Datatype rdf:about="https://schema.org/schema:telephone"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/entrena -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/entrena">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/esEntreno"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Atleta"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EntrenoWod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/esEntreno -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/esEntreno">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EntrenoWod"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Atleta"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasCity -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasCity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnasio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Ciudad"/>
+        <rdfs:comment xml:lang="es">Relaciona la ciudad en la que se encuentra el gimnasio</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasDate -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasDate">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EntrenoWod"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Date"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isEquipment"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEstiloWOD -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEstiloWOD">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WOD"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EstiloWOD"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEstiramiento -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEstiramiento">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isEstiramiento"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Estiramiento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasExercise -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasExercise">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/ExerciseWithReps"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasExerciseWithReps -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasExerciseWithReps">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isExerciseWithReps"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WODLevel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasFood -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasFood">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isFood"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Alimento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasInterval -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasInterval">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EntrenoWod"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Intervalo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasMuscle -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasMuscle">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isMuscle"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Músculo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasPlace -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasPlace">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EntrenoWod"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnasio"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasWOD -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasWOD">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EntrenoWod"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WOD"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasWODLevel -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasWODLevel">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WOD"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WODLevel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isEquipment -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isEquipment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isEstiramiento -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isEstiramiento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Estiramiento"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isExerciseWithReps -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isExerciseWithReps">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/ExerciseWithReps"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WODLevel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isFood -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isFood">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Alimento"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isMuscle -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/isMuscle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Músculo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WOD"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WODLevel"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://schema.org/address -->
+
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/address">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnasio"/>
+        <rdfs:range rdf:resource="https://schema.org/schema:address"/>
+        <rdfs:comment>Dirección postal del gimnasio</rdfs:comment>
+        <rdfs:label>address</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Reps -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Reps">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/ExerciseWithReps"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Número de repeticiones especificadas para cada ejercicio en un WOD</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/homepage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnasio"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Dirección web del gimnasio</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/mbox -->
+
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/mbox">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnasio"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Correo electrónico del gimnasio</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnasio"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Nombre del gimnasio</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/phone -->
+
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/phone">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnasio"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Teléfono del gimnasio</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/Location -->
+
+
+    <owl:Class rdf:about="http://purl.org/dc/elements/1.1/Location">
+        <rdfs:isDefinedBy>https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/Location/</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AMRAP -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AMRAP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EstiloWOD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Abdomen -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Abdomen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AirSquat -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AirSquat">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Barra"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fuerza"/>
+        <rdfs:comment xml:lang="en">Air squat, also called a body weight squat, is one of most vital movements. This is regular squats without using additional weights. This exercise is often used to train endurance, fat burning and for increasing lower body strength and developing core strength and stability. It&apos;s important for all athletes of all levels and experience to learn how to squat properly and the best way to do it is to develop good mechanics while under no load.</rdfs:comment>
+        <rdfs:label xml:lang="en">Air Squat</rdfs:label>
+        <rdfs:label xml:lang="es">Sentadilla</rdfs:label>
+        <rdfs:seeAlso>https://www.youtube.com/watch?v=C_VtOYc6j5c</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Alimento -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Alimento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/food:FoodProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AssaultBike -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AssaultBike">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Cardio"/>
+        <rdfs:comment xml:lang="es">Usar una bicicleta de asalto para ejercicios de resistencia y cardio.</rdfs:comment>
+        <rdfs:label xml:lang="en">Assault Air Bike</rdfs:label>
+        <rdfs:label xml:lang="es">Bicicleta de Asalto</rdfs:label>
+        <rdfs:seeAlso>https://www.youtube.com/watch?v=YSrkGWpYnpo</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Atleta -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Atleta">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/person"/>
+        <rdfs:comment>Conjunto de atletas y practicantes de CrossFit</rdfs:comment>
+        <rdfs:label>Atleta</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Burpee -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Burpee">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Cardio"/>
+        <rdfs:comment xml:lang="en">Burpee is a complex exercise which is used not only in Crossfit but in many other sports, where development and strength and endurance are necessary. This exercise is designed specifically for these purposes. Burpy consists of three separate exercises connected together, namely: air squats, push-ups and jumps.</rdfs:comment>
+        <rdfs:label>Burpee</rdfs:label>
+        <rdfs:seeAlso>https://www.youtube.com/watch?v=TU8QYVW0gDU</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Cardio -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Cardio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/CatCowStretch -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/CatCowStretch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Estiramiento"/>
+        <rdfs:comment xml:lang="es">Movimiento de yoga que flexiona y extiende la columna vertebral.</rdfs:comment>
+        <rdfs:label xml:lang="es">Estiramiento Gato-Vaca</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/ChildsPose -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/ChildsPose">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Estiramiento"/>
+        <rdfs:comment xml:lang="es">Postura de yoga que estira la espalda y relaja los músculos.</rdfs:comment>
+        <rdfs:label xml:lang="es">Postura del Niño</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Ciudad -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Ciudad">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/elements/1.1/Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Clean -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Clean">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Barra"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fuerza"/>
+        <rdfs:comment>The Clean came to Crossfit from Weightlifting, which allows to develop not only power and speed characteristics of body, but also build muscles of the opper and lower body. The exercise is considered basic and involves large muscle groups.</rdfs:comment>
+        <rdfs:label xml:lang="es">Cargada</rdfs:label>
+        <rdfs:label>Clean</rdfs:label>
+        <rdfs:seeAlso>https://www.youtube.com/watch?v=EKRiW9Yt3Ps</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/DU -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/DU">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Comba"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Cardio"/>
+        <rdfs:comment xml:lang="en">Double Unders Jump Rope is an excellent exercise to help improve stamina and conditioning,  which in its efficiency is much superior to running and ordinary jumping rope because the energy cost of exercise is much greater. Also Double Unders Jump Rope perfectly develop coordination of movements. This exercise should be studied only if you are confidently able to jump 100 or more single unders.
+
+This is standard double-under in which the rope passes completely under the feet twice for each jump. The rope must spin forward for the rep count.</rdfs:comment>
+        <rdfs:label xml:lang="en">Double Unders Jump Rope (DU)</rdfs:label>
+        <rdfs:label xml:lang="es">Saltos dobles a la comba</rdfs:label>
+        <rdfs:seeAlso>https://www.youtube.com/watch?v=-tF3hUsPZAI</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Date -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Date">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#DateTimeDescription"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Deadlift -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Deadlift">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Barra"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fuerza"/>
+        <rdfs:label xml:lang="en">Deadlift</rdfs:label>
+        <rdfs:label xml:lang="es">Peso muerto</rdfs:label>
+        <rdfs:seeAlso>https://www.youtube.com/watch?v=op9kVnSso6Q</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/DownwardDog -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/DownwardDog">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Estiramiento"/>
+        <rdfs:comment xml:lang="es">Postura del Perro Abajo): Una postura de yoga que estira la espalda y las piernas.</rdfs:comment>
+        <rdfs:label xml:lang="es">Postura del Perro Abajo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EMOM -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EMOM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EstiloWOD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EntrenoWod -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EntrenoWod"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment">
+        <rdfs:comment xml:lang="es">Material y equipamiento usado para los diferentes ejercicios</rdfs:comment>
+        <rdfs:label xml:lang="es">Material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Escalado -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Escalado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WODLevel"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/RX"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EstiloWOD -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EstiloWOD"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Estiramiento -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Estiramiento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/ExerciseWithReps -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/ExerciseWithReps"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/ForRounds -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/ForRounds">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EstiloWOD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fortime -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fortime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EstiloWOD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fran -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fran">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WOD"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEstiloWOD"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/ForRounds"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasExercise"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pullup"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Thruster"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WOD"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Murph"/>
+        <rdfs:comment>The workout:
+
+Three rounds, 21-15- and 9 reps, for time of:
+
+    43/30 kg (95 lb) thruster
+    Pull-ups</rdfs:comment>
+        <rdfs:label>Fran</rdfs:label>
+        <rdfs:seeAlso>https://www.youtube.com/watch?v=KYaqy4zcAJg&amp;t=3s&amp;ab_channel=CrossFit</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fuerza -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fuerza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnasio -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnasio">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnástico -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnástico">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Exercise"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Handstand -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Handstand">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnástico"/>
+        <rdfs:label xml:lang="en">Handstand</rdfs:label>
+        <rdfs:label xml:lang="es">Pino</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Intermedio -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Intermedio">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Atleta"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/entrena"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WOD"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasWODLevel"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/RX"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Atleta"/>
+        <rdfs:comment>Un atleta intermedio es un atleta que ha entrenado al menos una vez y alguno de sus entrenamientos han sido RX</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Intervalo -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Intervalo">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#Interval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/KettlebellSwing -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/KettlebellSwing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fuerza"/>
+        <rdfs:label xml:lang="es">Balanceo de pesa rusa</rdfs:label>
+        <rdfs:label xml:lang="en">Kettlebell Swing</rdfs:label>
+        <rdfs:label xml:lang="en">The Kettlebell Swing: is one of most popular movements in crossfit, and it&apos;s fairly.
+
+The Kettlebell Swing can be used by professional athletes and beginners, to strengthen the body and prepared for more harder workouts</rdfs:label>
+        <rdfs:seeAlso>https://www.youtube.com/watch?v=vdezTMulJ-k</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Murph -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Murph">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WOD"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEstiloWOD"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fortime"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasExercise"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AirSquat"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pullup"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pushup"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WOD"/>
+        <rdfs:comment>The workout:
+
+    1 mile run
+    100 pull-ups
+    200 push-ups
+    300 air squats
+    1-mile run
+
+All with a weight vest (20/14 lb) 
+
+ESCALADO
+
+👉 Carrera 400 m 
+👉 25 Pull-Ups – dominadas 
+👉 50 Push-Ups – flexiones 
+👉 75 Air Squats – sentadillas al aire 
+👉 Carrera 400 m</rdfs:comment>
+        <rdfs:label>Murph</rdfs:label>
+        <rdfs:seeAlso>https://www.youtube.com/watch?v=muGj0XrH93w</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/MuscleUp -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/MuscleUp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnástico"/>
+        <rdfs:comment xml:lang="en">Bar Muscle-Up</rdfs:comment>
+        <rdfs:comment xml:lang="en">This exercise is great for developing high-speed power of the upper body. Besides main strength and stamina, Bar Muscle-Up develops coordination as well. This exercises are classified as technically complex, therefore it is recommended to start studying it after mastering the preparatory exercises.
+
+In the bar muscle-up, the athlete must begin with or pass though hand below the bar, with the arms fully extended and the feet off the ground. Kipping the muscle-up is acceptable, but pull-overs, rolls to support and glide kips are not permitted. The heels may not rise above the height of the bar during the kip.
+
+At the top, the elbows must be fully locked while the athlete is in the support position above the bar with the shoulders over or in front of the bar. Athletes must pass through some portion of a dip-to-lockout over the bar. Only the hands, and no other part of the arm, may touch the pull-up bar to assist the athlete in completing the rep. One on top, the hands must stay in contact with the bar, and athletes must maintain support with their arms. Removing the hands and resting while on top of the bar is not allowed. Athletes may wrap tape around the pull-up bar OR wear hand protection (gymnastics-style, grips, gloves, etc.), but they may not tape the bar AND wear hand protection.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Un movimiento que combina una dominada y una flexión de tríceps para pasar por encima de una barra o anillas.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Músculo -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Músculo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/PigeonPose -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/PigeonPose">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Estiramiento"/>
+        <rdfs:comment xml:lang="es">Estiramiento de caderas y glúteos.</rdfs:comment>
+        <rdfs:label xml:lang="es">Postura de la Paloma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pistol -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pistol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnástico"/>
+        <rdfs:comment xml:lang="en">Pistol Squat can be considered basic bodyweight lower body workouts. This exercise is one of the most difficult exercises, even for advanced exercisers. Easier versions of this movement include partial reps or self assistance on horizontal bar, from raised rear leg, or with one leg wrapped behind supporting leg. Other squatting or split squat movements can also be performed. Self-assisted Single Leg Squat (leg wrapped) Self-assisted Single Leg Squat (bar) Leg Raised Back Single Leg Split Squat</rdfs:comment>
+        <rdfs:comment xml:lang="es">Un tipo de sentadilla en una sola pierna.</rdfs:comment>
+        <rdfs:label xml:lang="en">Pistol Squat</rdfs:label>
+        <rdfs:seeAlso>https://www.youtube.com/watch?v=qDcniqddTeE</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Plank -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Plank">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Abdomen"/>
+        <rdfs:comment xml:lang="es">Un ejercicio clásico para fortalecer los músculos abdominales.</rdfs:comment>
+        <rdfs:label xml:lang="es">Plancha</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Profesional -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Profesional">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Atleta"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasWODLevel"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/RX"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/entrena"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Atleta"/>
+        <rdfs:comment>Un profesional es un atleta que ha entrenado al menos 5 veces y todos sus entrenamientos han sido RX</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pullup -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pullup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Gimnástico"/>
+        <rdfs:comment xml:lang="en">The CrossFit Pull-Ups same are known as Kipping Pull-Ups it&apos;s one of fundamental CrossFit movements. It&apos;s very technical movement wich needed from athlete good coordination and power.
+
+This is a standard chin-over-bar pull-up. Dead hang, kipping or butterfly pull-ups, are permitted as long as all the requirements are met. The arms must be fully extended at the bottom with the feet off the ground.
+
+At the top of the movement, the chin must break the horizontal plane of the bar. Athletes may wrap tape around the pull-up bar OR wear hand protection (gymnastics-style grips, gloves, etc.), but they may not tape the bar AND wear hand protection.</rdfs:comment>
+        <rdfs:label xml:lang="es">Dominada</rdfs:label>
+        <rdfs:label xml:lang="en">Pull Up</rdfs:label>
+        <rdfs:seeAlso>https://www.youtube.com/watch?v=r45xLlH7r_M</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pushup -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pushup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fuerza"/>
+        <rdfs:comment xml:lang="en">The Push Up is a fundamental movement of each fitness program, you can perform it anywhere without special equipment.
+
+The main Benefits of push ups:
+- Good workout for upper body muscles 
+- Make a strong core
+- You can do it anywhere
+- Improve your posture
+- Burn Calories and Fat</rdfs:comment>
+        <rdfs:label xml:lang="es">Flexión</rdfs:label>
+        <rdfs:label xml:lang="en">Push Up</rdfs:label>
+        <rdfs:seeAlso>https://www.youtube.com/watch?v=_l3ySVKYVJ8</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/RX -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/RX">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WODLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Rookie -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Rookie">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Atleta"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/entrena"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WOD"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasWODLevel"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Escalado"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Atleta"/>
+        <rdfs:comment>Un rookie es un atleta que ha entrenado al menos una vez y todos sus entrenamientos han sido Escalados</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Row -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Row">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Cardio"/>
+        <rdfs:comment xml:lang="es">Utilizar una máquina de remo para ejercicios cardiovasculares.</rdfs:comment>
+        <rdfs:label xml:lang="es">Remo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Run -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Run">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Cardio"/>
+        <rdfs:comment xml:lang="es">Correr distancias variadas como parte de un WOD o entrenamiento.</rdfs:comment>
+        <rdfs:label xml:lang="es">Correr</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/SeatedForwardBend -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/SeatedForwardBend">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Estiramiento"/>
+        <rdfs:comment xml:lang="es">Estiramiento de las piernas y la espalda</rdfs:comment>
+        <rdfs:label xml:lang="es">Flexión hacia Adelante Sentado</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/SitUp -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/SitUp">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Abdomen"/>
+        <rdfs:comment xml:lang="es">Un ejercicio clásico para fortalecer los músculos abdominales.</rdfs:comment>
+        <rdfs:label xml:lang="es">Sit Up</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Snatch -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Snatch">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Barra"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fuerza"/>
+        <rdfs:comment xml:lang="en">For the snatch, the lifter takes the barbell from the floor to an overhead position in a single motion. it’s one of the most explosive and athletic movements in all of sports. Looks can be deceiving, though; the snatch is a finesse lift. When executed perfectly, heavy weight feels light.</rdfs:comment>
+        <rdfs:label xml:lang="es">Arrancada</rdfs:label>
+        <rdfs:label xml:lang="en">Snatch</rdfs:label>
+        <rdfs:seeAlso>https://www.youtube.com/watch?v=9xQp2sldyts</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Thruster -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Thruster">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Barra"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fuerza"/>
+        <rdfs:comment>The thruster is a serious compound (utilizes more than one joint) exercise that combines a clean, front squat and push-press.</rdfs:comment>
+        <rdfs:label xml:lang="en">Thrusters</rdfs:label>
+        <rdfs:label xml:lang="es">Thrusters</rdfs:label>
+        <rdfs:seeAlso>https://www.youtube.com/watch?v=aea5BGj9a8Y</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/VUp -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/VUp">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/hasEquipment"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Abdomen"/>
+        <rdfs:comment>The V-up is an ab exercise that works the entire rectus abdominis which is what most people refer to as the “6 pack”. It basically involves folding your legs and upper body into a V shape in order to engage all your ab muscles.</rdfs:comment>
+        <rdfs:label xml:lang="en">V Up</rdfs:label>
+        <rdfs:seeAlso>https://www.youtube.com/watch?v=Mk4zCq9b6hU</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WOD -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WOD"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WODLevel -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/WODLevel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/food:FoodProduct -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/food:FoodProduct">
+        <rdfs:isDefinedBy>http://data.lirmm.fr/ontologies/food#FoodProduct</rdfs:isDefinedBy>
+        <rdfs:seeAlso>https://foodon.org/design/foodon-structure/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#DateTimeDescription -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#DateTimeDescription">
+        <rdfs:isDefinedBy>https://www.w3.org/TR/owl-time/#time:DateTimeDescription</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Interval -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Interval">
+        <rdfs:isDefinedBy>https://www.w3.org/TR/owl-time/#time:Interval</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
+        <rdfs:isDefinedBy>http://xmlns.com/foaf/0.1/#term_Organization</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/person -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/person">
+        <rdfs:isDefinedBy>https://lov.linkeddata.es/dataset/lov/vocabs/foaf</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Barra -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Barra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Cajones -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Cajones">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Comba -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Comba">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Mancuerna -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Mancuerna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/PesaRusa -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/PesaRusa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Rack -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Rack">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Rope -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Rope">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Equipment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AMRAP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/EMOM"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/ForRounds"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Fortime"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AirSquat"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AssaultBike"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Burpee"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/CatCowStretch"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/ChildsPose"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Clean"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/DU"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Deadlift"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/DownwardDog"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Handstand"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/KettlebellSwing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/MuscleUp"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/PigeonPose"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pistol"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Plank"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pullup"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pushup"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Row"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Run"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/SeatedForwardBend"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/SitUp"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Snatch"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Thruster"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/VUp"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AirSquat"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Clean"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Deadlift"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/KettlebellSwing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Pushup"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Snatch"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Thruster"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/AssaultBike"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Burpee"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/DU"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Row"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Run"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/CatCowStretch"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/ChildsPose"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/DownwardDog"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/PigeonPose"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/SeatedForwardBend"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Intermedio"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Profesional"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Rookie"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/Plank"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/SitUp"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2023/10/crossfit/VUp"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
