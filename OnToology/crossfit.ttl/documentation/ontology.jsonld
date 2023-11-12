@@ -1,0 +1,2174 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid5"
+    }, {
+      "@id" : "_:genid3"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Barra"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasEquipment"
+  } ]
+}, {
+  "@id" : "_:genid108",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/AirSquat"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Clean"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Deadlift"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/KettlebellSwing"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Pushup"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Snatch"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Thruster"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid116",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/AssaultBike"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Burpee"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/DU"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Row"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Run"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasEquipment"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Equipment"
+  } ]
+}, {
+  "@id" : "_:genid122",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/CatCowStretch"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/ChildsPose"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/DownwardDog"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/PigeonPose"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/SeatedForwardBend"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid128",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Intermedio"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Profesional"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Rookie"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid17"
+    }, {
+      "@id" : "_:genid15"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid132",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Plank"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/SitUp"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/VUp"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Comba"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasEquipment"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasEquipment"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Equipment"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid22"
+    }, {
+      "@id" : "_:genid20"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Barra"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasEquipment"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasEquipment"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Equipment"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/WOD"
+    }, {
+      "@id" : "_:genid30"
+    }, {
+      "@id" : "_:genid25"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid26"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasExercise"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Pullup"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Thruster"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Barra"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasEquipment"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/ForRounds"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasEstiloWOD"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#complementOf" : [ {
+    "@id" : "_:genid33"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasEquipment"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Equipment"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Atleta"
+    }, {
+      "@id" : "_:genid38"
+    }, {
+      "@id" : "_:genid36"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasWODLevel"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/RX"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/entrena"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/WOD"
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/WOD"
+    }, {
+      "@id" : "_:genid48"
+    }, {
+      "@id" : "_:genid42"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid43"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasExercise"
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/AirSquat"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Pullup"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Pushup"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Fortime"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasEstiloWOD"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasEquipment"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Equipment"
+  } ]
+}, {
+  "@id" : "_:genid50",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Atleta"
+    }, {
+      "@id" : "_:genid54"
+    }, {
+      "@id" : "_:genid52"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "5"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/entrena"
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/RX"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasWODLevel"
+  } ]
+}, {
+  "@id" : "_:genid56",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Atleta"
+    }, {
+      "@id" : "_:genid60"
+    }, {
+      "@id" : "_:genid58"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid58",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Escalado"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasWODLevel"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#complementOf" : [ {
+    "@id" : "_:genid7"
+  } ]
+}, {
+  "@id" : "_:genid60",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/entrena"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/WOD"
+  } ]
+}, {
+  "@id" : "_:genid62",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#complementOf" : [ {
+    "@id" : "_:genid63"
+  } ]
+}, {
+  "@id" : "_:genid63",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasEquipment"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Equipment"
+  } ]
+}, {
+  "@id" : "_:genid64",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#complementOf" : [ {
+    "@id" : "_:genid65"
+  } ]
+}, {
+  "@id" : "_:genid65",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasEquipment"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Equipment"
+  } ]
+}, {
+  "@id" : "_:genid66",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid70"
+    }, {
+      "@id" : "_:genid68"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid68",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Barra"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasEquipment"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasEquipment"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Equipment"
+  } ]
+}, {
+  "@id" : "_:genid70",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasEquipment"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Equipment"
+  } ]
+}, {
+  "@id" : "_:genid71",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid75"
+    }, {
+      "@id" : "_:genid73"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid73",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Barra"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasEquipment"
+  } ]
+}, {
+  "@id" : "_:genid75",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasEquipment"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Equipment"
+  } ]
+}, {
+  "@id" : "_:genid76",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#complementOf" : [ {
+    "@id" : "_:genid77"
+  } ]
+}, {
+  "@id" : "_:genid77",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasEquipment"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Equipment"
+  } ]
+}, {
+  "@id" : "_:genid78",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/AMRAP"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/EMOM"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/ForRounds"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Fortime"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid12"
+    }, {
+      "@id" : "_:genid10"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid83",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/AirSquat"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/AssaultBike"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Burpee"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/CatCowStretch"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/ChildsPose"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Clean"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/DU"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Deadlift"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/DownwardDog"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Handstand"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/KettlebellSwing"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/MuscleUp"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/PigeonPose"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Pistol"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Plank"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Pullup"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Pushup"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Row"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Run"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/SeatedForwardBend"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/SitUp"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Snatch"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/Thruster"
+    }, {
+      "@id" : "https://github.com/segoedu/crossfit-ontology/VUp"
+    } ]
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/Location/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "dc:Location"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/address",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Dirección postal del gimnasio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Gimnasio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://schema.org/schema:address"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/owl/owlapi/turtle#isCity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "la ciudad donde se ubica un gimnasio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Ciudad"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isCity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Gimnasio"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasCity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/owl/owlapi/turtle#isDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El día de realización de un entrenamiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isDate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/EntrenoWod"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasDate"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/owl/owlapi/turtle#isEstiloWOD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "el estilo asociado a un WOD específico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/EstiloWOD"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isEstiloWOD"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/WOD"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasEstiloWOD"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/owl/owlapi/turtle#isExercise",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "el ejercicio asociado a un entrenamiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Exercise"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isExercise"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/ExerciseWithReps"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasExercise"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/owl/owlapi/turtle#isInterval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "el tiempo invertido en un entrenamiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Intervalo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isInterval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/EntrenoWod"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasInterval"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/owl/owlapi/turtle#isPlace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El lugar donde se ha realizado un entrenamiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Gimnasio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isPlace"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/EntrenoWod"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasPlace"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/owl/owlapi/turtle#isWOD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El entrenamiento realizado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/WOD"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isWOD"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/EntrenoWod"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasWOD"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/owl/owlapi/turtle#isWODLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El nivel del entrenamiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/WODLevel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isWODLevel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/WOD"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/hasWODLevel"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/WOD"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/WODLevel"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#DateTimeDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Día importado de la ontrología time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://www.w3.org/TR/owl-time/#time:DateTimeDescription"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "time:DateTimeDescription"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#Interval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Intervalo de tiempo de la ontología time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://www.w3.org/TR/owl-time/#time:Interval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "time:Interval"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/homepage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Dirección web del gimnasio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Gimnasio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "homepage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/mbox",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Correo electrónico del gimnasio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Gimnasio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "mailbox"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Nombre del gimnasio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Gimnasio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Los gimnasios heredan de la clase Organization de foaf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://xmlns.com/foaf/0.1/#term_Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "foaf:organization"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Los atletas heredan de la clase foaf:person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://lov.linkeddata.es/dataset/lov/vocabs/foaf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "foaf:person"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/phone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Teléfono del gimnasio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Gimnasio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "phone"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2023-11-14T09:00:00"
+  } ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Eduardo de la Cruz <https://segoedu.com/>"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "es",
+    "@value" : "La ontología del CrossFit modela de manera estructurada los movimientos, ejercicios, entrenamientos diarios (WODs), atletas, gimnasios y aspectos nutricionales relacionados con esta disciplina de acondicionamiento físico, permitiendo un análisis detallado de las relaciones y características específicas de cada elemento en el dominio del CrossFit."
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
+    "@value" : "Crossfit ontology"
+  }, {
+    "@language" : "es",
+    "@value" : "Ontología del Crossfit"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.0.1"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology#ExerciseStop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/ExerciseWithReps"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology#hasExerciseNext",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/ExerciseWithReps"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/ExerciseWithReps"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/AMRAP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "As many rounds as possible"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AMRAP"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/EstiloWOD"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Abdomen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Ejercicios abdominales"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Abdomen"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Exercise"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/AirSquat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Air squat, also called a body weight squat, is one of most vital movements. This is regular squats without using additional weights. This exercise is often used to train endurance, fat burning and for increasing lower body strength and developing core strength and stability. It's important for all athletes of all levels and experience to learn how to squat properly and the best way to do it is to develop good mechanics while under no load."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Air Squat"
+  }, {
+    "@language" : "es",
+    "@value" : "Sentadilla"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://www.youtube.com/watch?v=C_VtOYc6j5c"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Fuerza"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Alimento",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Alimentos recomendados para la ingesta anterior o posterior a la realización de un ejercicio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Alimento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/food:FoodProduct"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/AssaultBike",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Usar una bicicleta de asalto para ejercicios de resistencia y cardio."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Assault Air Bike"
+  }, {
+    "@language" : "es",
+    "@value" : "Bicicleta de Asalto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://www.youtube.com/watch?v=YSrkGWpYnpo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Cardio"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Atleta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Conjunto de atletas y practicantes de CrossFit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Atleta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/person"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Barra",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Equipment"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Burpee",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Burpee is a complex exercise which is used not only in Crossfit but in many other sports, where development and strength and endurance are necessary. This exercise is designed specifically for these purposes. Burpy consists of three separate exercises connected together, namely: air squats, push-ups and jumps."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Burpee"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://www.youtube.com/watch?v=TU8QYVW0gDU"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Cardio"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid6"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Cajones",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Equipment"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Cardio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Ejercicio de Cardio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cardio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Exercise"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/CatCowStretch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Movimiento de yoga que flexiona y extiende la columna vertebral."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Estiramiento Gato-Vaca"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Estiramiento"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/ChildsPose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Postura de yoga que estira la espalda y relaja los músculos."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Postura del Niño"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Estiramiento"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Ciudad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Ciudad donde se ubica un gimnasio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "City"
+  }, {
+    "@language" : "es",
+    "@value" : "Ciudad"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/Location"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Clean",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Clean came to Crossfit from Weightlifting, which allows to develop not only power and speed characteristics of body, but also build muscles of the opper and lower body. The exercise is considered basic and involves large muscle groups."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Cargada"
+  }, {
+    "@value" : "Clean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://www.youtube.com/watch?v=EKRiW9Yt3Ps"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Fuerza"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid8"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Comba",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Equipment"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/DU",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Double Unders Jump Rope is an excellent exercise to help improve stamina and conditioning,  which in its efficiency is much superior to running and ordinary jumping rope because the energy cost of exercise is much greater. Also Double Unders Jump Rope perfectly develop coordination of movements. This exercise should be studied only if you are confidently able to jump 100 or more single unders.\n\nThis is standard double-under in which the rope passes completely under the feet twice for each jump. The rope must spin forward for the rep count."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Double Unders Jump Rope (DU)"
+  }, {
+    "@language" : "es",
+    "@value" : "Saltos dobles a la comba"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://www.youtube.com/watch?v=-tF3hUsPZAI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Cardio"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid13"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Día de realización del entrenamiento por parte de un atleta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2006/time#DateTimeDescription"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Deadlift",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Levantamiento de peso muerto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Deadlift"
+  }, {
+    "@language" : "es",
+    "@value" : "Peso muerto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://www.youtube.com/watch?v=op9kVnSso6Q"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Fuerza"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid18"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/DownwardDog",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Postura del Perro Abajo): Una postura de yoga que estira la espalda y las piernas."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Postura del Perro Abajo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Estiramiento"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/EMOM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Every minute on the minute"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "EMOM"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/EstiloWOD"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/EntrenoWod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona entrenamientos específicos de cada atleta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "EntrenoWod"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Equipment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Material y equipamiento usado para los diferentes ejercicios"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Material"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Escalado",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Nivel escalado de WOD, para atletas que se inician"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Escalado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/WODLevel"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/RX"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/EstiloWOD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Especifica los diferentes tipos de WOD disponibles."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "EstilOWOD"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Estiramiento",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Ejercicios útiles para estirar"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Estiramiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Exercise"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Exercise",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Distintos tipos de ejercicios disponibles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Exercise"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/ExerciseWithReps",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona ejercicios y  número de repeticiones para cada WOD"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ExerciseWithReps"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/ForRounds",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "WODs en los que se especifica el número de rondas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ForRounds"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/EstiloWOD"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Fortime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "WODs en los que se contabiliza el tiempo total de entreno hasta finalizar"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ForTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/EstiloWOD"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Fran",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The workout:\n\nThree rounds, 21-15- and 9 reps, for time of:\n\n    43/30 kg (95 lb) thruster\n    Pull-ups"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Fran"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://www.youtube.com/watch?v=KYaqy4zcAJg&t=3s&ab_channel=CrossFit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/WOD"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Murph"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid23"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Fuerza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Ejercicios para el entrenamiento de fuerza"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Fuerza"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Exercise"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Gimnasio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Lugares de entrenamiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Gimnasio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/organization"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Gimnástico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Ejercicios de habilidades gimnásticas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Gimnástico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Exercise"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid32"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Handstand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Pino en pared"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Handstand"
+  }, {
+    "@language" : "es",
+    "@value" : "Pino"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Gimnástico"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Intermedio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Un atleta intermedio es un atleta que ha entrenado al menos una vez y alguno de sus entrenamientos han sido RX"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Intermedio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Atleta"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid34"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Intervalo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Tiempo dedicado a la finalización del entrenamiento de un WOD por parte de un atleta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Interval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2006/time#Interval"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/KettlebellSwing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The Kettlebell Swing: is one of most popular movements in crossfit, and it's fairly.\n\nThe Kettlebell Swing can be used by professional athletes and beginners, to strengthen the body and prepared for more harder workouts"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Balanceo de pesa rusa"
+  }, {
+    "@language" : "en",
+    "@value" : "Kettlebell Swing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://www.youtube.com/watch?v=vdezTMulJ-k"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Fuerza"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Mancuerna",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Equipment"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Murph",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The workout:\n\n    1 mile run\n    100 pull-ups\n    200 push-ups\n    300 air squats\n    1-mile run\n\nAll with a weight vest (20/14 lb) \n\nESCALADO\n\n👉 Carrera 400 m \n👉 25 Pull-Ups – dominadas \n👉 50 Push-Ups – flexiones \n👉 75 Air Squats – sentadillas al aire \n👉 Carrera 400 m"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Murph"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://www.youtube.com/watch?v=muGj0XrH93w"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/WOD"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid40"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/MuscleUp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Bar Muscle-Up"
+  }, {
+    "@language" : "en",
+    "@value" : "This exercise is great for developing high-speed power of the upper body. Besides main strength and stamina, Bar Muscle-Up develops coordination as well. This exercises are classified as technically complex, therefore it is recommended to start studying it after mastering the preparatory exercises.\n\nIn the bar muscle-up, the athlete must begin with or pass though hand below the bar, with the arms fully extended and the feet off the ground. Kipping the muscle-up is acceptable, but pull-overs, rolls to support and glide kips are not permitted. The heels may not rise above the height of the bar during the kip.\n\nAt the top, the elbows must be fully locked while the athlete is in the support position above the bar with the shoulders over or in front of the bar. Athletes must pass through some portion of a dip-to-lockout over the bar. Only the hands, and no other part of the arm, may touch the pull-up bar to assist the athlete in completing the rep. One on top, the hands must stay in contact with the bar, and athletes must maintain support with their arms. Removing the hands and resting while on top of the bar is not allowed. Athletes may wrap tape around the pull-up bar OR wear hand protection (gymnastics-style, grips, gloves, etc.), but they may not tape the bar AND wear hand protection."
+  }, {
+    "@language" : "es",
+    "@value" : "Un movimiento que combina una dominada y una flexión de tríceps para pasar por encima de una barra o anillas."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Muscle Up"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Gimnástico"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Músculo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Músculos involucrados en la realización de un ejercicio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Muscle"
+  }, {
+    "@language" : "es",
+    "@value" : "Músculo"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/PesaRusa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Equipment"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/PigeonPose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Estiramiento de caderas y glúteos."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Postura de la Paloma"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Estiramiento"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Pistol",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Pistol Squat can be considered basic bodyweight lower body workouts. This exercise is one of the most difficult exercises, even for advanced exercisers. Easier versions of this movement include partial reps or self assistance on horizontal bar, from raised rear leg, or with one leg wrapped behind supporting leg. Other squatting or split squat movements can also be performed. Self-assisted Single Leg Squat (leg wrapped) Self-assisted Single Leg Squat (bar) Leg Raised Back Single Leg Split Squat"
+  }, {
+    "@language" : "es",
+    "@value" : "Un tipo de sentadilla en una sola pierna."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Pistol Squat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://www.youtube.com/watch?v=qDcniqddTeE"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Gimnástico"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Plank",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Un ejercicio clásico para fortalecer los músculos abdominales."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Plancha"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Abdomen"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Profesional",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Un profesional es un atleta que ha entrenado al menos 5 veces y todos sus entrenamientos han sido RX"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Pro"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Atleta"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid50"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Pullup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The CrossFit Pull-Ups same are known as Kipping Pull-Ups it's one of fundamental CrossFit movements. It's very technical movement wich needed from athlete good coordination and power.\n\nThis is a standard chin-over-bar pull-up. Dead hang, kipping or butterfly pull-ups, are permitted as long as all the requirements are met. The arms must be fully extended at the bottom with the feet off the ground.\n\nAt the top of the movement, the chin must break the horizontal plane of the bar. Athletes may wrap tape around the pull-up bar OR wear hand protection (gymnastics-style grips, gloves, etc.), but they may not tape the bar AND wear hand protection."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Dominada"
+  }, {
+    "@language" : "en",
+    "@value" : "Pull Up"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://www.youtube.com/watch?v=r45xLlH7r_M"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Gimnástico"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Pushup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The Push Up is a fundamental movement of each fitness program, you can perform it anywhere without special equipment.\n\nThe main Benefits of push ups:\n- Good workout for upper body muscles \n- Make a strong core\n- You can do it anywhere\n- Improve your posture\n- Burn Calories and Fat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Flexión"
+  }, {
+    "@language" : "en",
+    "@value" : "Push Up"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://www.youtube.com/watch?v=_l3ySVKYVJ8"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Fuerza"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/RX",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Nivel exigido"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RX"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/WODLevel"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Rack",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Equipment"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Reps",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Número de repeticiones especificadas para cada ejercicio en un WOD"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/ExerciseWithReps"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Repeticiones"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Rookie",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Un rookie es un atleta que ha entrenado al menos una vez y todos sus entrenamientos han sido Escalados"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Novato"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Atleta"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid56"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Rope",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Equipment"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Row",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Utilizar una máquina de remo para ejercicios cardiovasculares."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Remo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Cardio"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Run",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Correr distancias variadas como parte de un WOD o entrenamiento."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Correr"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Cardio"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid62"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/SeatedForwardBend",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Estiramiento de las piernas y la espalda"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Flexión hacia Adelante Sentado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Estiramiento"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/SitUp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Un ejercicio clásico para fortalecer los músculos abdominales."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Sit Up"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Abdomen"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid64"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Snatch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "For the snatch, the lifter takes the barbell from the floor to an overhead position in a single motion. it’s one of the most explosive and athletic movements in all of sports. Looks can be deceiving, though; the snatch is a finesse lift. When executed perfectly, heavy weight feels light."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Arrancada"
+  }, {
+    "@language" : "en",
+    "@value" : "Snatch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://www.youtube.com/watch?v=9xQp2sldyts"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Fuerza"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid66"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/Thruster",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The thruster is a serious compound (utilizes more than one joint) exercise that combines a clean, front squat and push-press."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Thrusters"
+  }, {
+    "@language" : "es",
+    "@value" : "Thrusters"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://www.youtube.com/watch?v=aea5BGj9a8Y"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Fuerza"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid71"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/VUp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The V-up is an ab exercise that works the entire rectus abdominis which is what most people refer to as the “6 pack”. It basically involves folding your legs and upper body into a V shape in order to engage all your ab muscles."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "V Up"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://www.youtube.com/watch?v=Mk4zCq9b6hU"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Abdomen"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid76"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/WOD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Work Of Day"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "WOD"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/WODLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Nivel de WOD"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "WODLevel"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/entrena",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Atletas entrenan WODs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Atleta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "entrena"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/EntrenoWod"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/esEntreno"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/esEntreno",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Un wod específico es entrenado por un atleta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/EntrenoWod"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "esEntreno"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Atleta"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/food:FoodProduct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Food Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://data.lirmm.fr/ontologies/food#FoodProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "food:FoodProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://foodon.org/design/foodon-structure/"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/hasCity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona la ciudad en la que se encuentra el gimnasio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Gimnasio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasCity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Ciudad"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/hasDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Un entrenamiento se ha practicado un día del calendario"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/EntrenoWod"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasDate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Date"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/hasEquipment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Un entrenamiento requiere de un equipamiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Exercise"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasEquipment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Equipment"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/isEquipment"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/hasEstiloWOD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Nivel del entrenamiento WOD"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/WOD"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasEstiloWOD"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/EstiloWOD"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/hasEstiramiento",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#ReflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "ejercicio tiene un tipo de estiramiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Exercise"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasEstiramiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Estiramiento"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/isEstiramiento"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/hasExercise",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Un ejercicio con repeticiones está asociado a un ejercicio en particular"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/ExerciseWithReps"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasExercise"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Exercise"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/hasExerciseWithReps",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Un WOD tiene diferentes ejercicios con repeticiones"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/WODLevel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasExerciseWithReps"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/ExerciseWithReps"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/isExerciseWithReps"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/hasFood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Un ejercicio tiene una alimentación recomendada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Exercise"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasFood"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Alimento"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/isFood"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/hasInterval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Tiempo en el que se ha ejecutado un WOD"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/EntrenoWod"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasInterval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Intervalo"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/hasMuscle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Músculos involucrados en un ejercicio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Exercise"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasMuscle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Músculo"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/isMuscle"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/hasPlace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Un entrenamiento tiene lugar en un gimnasio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/EntrenoWod"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasPlace"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Gimnasio"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/hasWOD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El entrenamiento de un WOD específico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/EntrenoWod"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasWOD"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/WOD"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/hasWODLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Un WOD específico entrenado tiene un nivel asociado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/WOD"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasWODLevel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/WODLevel"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/isEquipment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El equipamiento utilizado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Equipment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isEquipment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Exercise"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/isEstiramiento",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Un ejercicio que sirve de estiramiento para otro"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Estiramiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isEstiramiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Exercise"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/isExerciseWithReps",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Un ejercicio con repeticiones asociado a un entrenamiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/ExerciseWithReps"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isExerciseWithReps"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/WODLevel"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/isFood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El alimento recomendado tras un entrenamiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Alimento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isFood"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Exercise"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/isMuscle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "un músculo involucrado en un ejercicio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Músculo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isMuscle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Exercise"
+  } ]
+}, {
+  "@id" : "https://schema.org/schema:address",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "https://schema.org/schema:telephone",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+} ]
