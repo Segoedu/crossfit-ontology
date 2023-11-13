@@ -66,7 +66,7 @@
       "@id" : "https://github.com/segoedu/crossfit-ontology/Exercise"
     },
     "isWOD" : {
-      "@id" : "http://www.semanticweb.org/owl/owlapi/turtle#isWOD",
+      "@id" : "https://github.com/segoedu/crossfit-ontology/isWOD",
       "@type" : "@id"
     },
     "Abdomen" : {
@@ -109,7 +109,7 @@
       "@id" : "https://github.com/segoedu/crossfit-ontology/Profesional"
     },
     "isExercise" : {
-      "@id" : "http://www.semanticweb.org/owl/owlapi/turtle#isExercise",
+      "@id" : "https://github.com/segoedu/crossfit-ontology/isExercise",
       "@type" : "@id"
     },
     "hasMuscle" : {
@@ -160,7 +160,7 @@
       "@id" : "https://github.com/segoedu/crossfit-ontology/MuscleUp"
     },
     "isEstiloWOD" : {
-      "@id" : "http://www.semanticweb.org/owl/owlapi/turtle#isEstiloWOD",
+      "@id" : "https://github.com/segoedu/crossfit-ontology/isEstiloWOD",
       "@type" : "@id"
     },
     "Pushup" : {
@@ -215,7 +215,7 @@
       "@type" : "@id"
     },
     "isCity" : {
-      "@id" : "http://www.semanticweb.org/owl/owlapi/turtle#isCity",
+      "@id" : "https://github.com/segoedu/crossfit-ontology/isCity",
       "@type" : "@id"
     },
     "isDefinedBy" : {
@@ -225,7 +225,7 @@
       "@id" : "https://github.com/segoedu/crossfit-ontology/PigeonPose"
     },
     "isWODLevel" : {
-      "@id" : "http://www.semanticweb.org/owl/owlapi/turtle#isWODLevel",
+      "@id" : "https://github.com/segoedu/crossfit-ontology/isWODLevel",
       "@type" : "@id"
     },
     "EstiloWOD" : {
@@ -261,7 +261,7 @@
       "@id" : "https://github.com/segoedu/crossfit-ontology/EMOM"
     },
     "isInterval" : {
-      "@id" : "http://www.semanticweb.org/owl/owlapi/turtle#isInterval",
+      "@id" : "https://github.com/segoedu/crossfit-ontology/isInterval",
       "@type" : "@id"
     },
     "Fran" : {
@@ -311,7 +311,7 @@
       "@type" : "@id"
     },
     "isDate" : {
-      "@id" : "http://www.semanticweb.org/owl/owlapi/turtle#isDate",
+      "@id" : "https://github.com/segoedu/crossfit-ontology/isDate",
       "@type" : "@id"
     },
     "organization" : {
@@ -334,8 +334,12 @@
       "@id" : "https://github.com/segoedu/crossfit-ontology/entrena",
       "@type" : "@id"
     },
+    "isExerciseNext" : {
+      "@id" : "https://github.com/segoedu/crossfit-ontology#isExerciseNext",
+      "@type" : "@id"
+    },
     "isPlace" : {
-      "@id" : "http://www.semanticweb.org/owl/owlapi/turtle#isPlace",
+      "@id" : "https://github.com/segoedu/crossfit-ontology/isPlace",
       "@type" : "@id"
     },
     "SeatedForwardBend" : {

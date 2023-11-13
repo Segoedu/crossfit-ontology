@@ -598,158 +598,6 @@
     "@id" : "https://schema.org/schema:address"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/owl/owlapi/turtle#isCity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "la ciudad donde se ubica un gimnasio"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://github.com/segoedu/crossfit-ontology/Ciudad"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "isCity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://github.com/segoedu/crossfit-ontology/Gimnasio"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://github.com/segoedu/crossfit-ontology/hasCity"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/owl/owlapi/turtle#isDate",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "El día de realización de un entrenamiento"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://github.com/segoedu/crossfit-ontology/Date"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "isDate"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://github.com/segoedu/crossfit-ontology/EntrenoWod"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://github.com/segoedu/crossfit-ontology/hasDate"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/owl/owlapi/turtle#isEstiloWOD",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "el estilo asociado a un WOD específico"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://github.com/segoedu/crossfit-ontology/EstiloWOD"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "isEstiloWOD"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://github.com/segoedu/crossfit-ontology/WOD"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://github.com/segoedu/crossfit-ontology/hasEstiloWOD"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/owl/owlapi/turtle#isExercise",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "el ejercicio asociado a un entrenamiento"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://github.com/segoedu/crossfit-ontology/Exercise"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "isExercise"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://github.com/segoedu/crossfit-ontology/ExerciseWithReps"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://github.com/segoedu/crossfit-ontology/hasExercise"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/owl/owlapi/turtle#isInterval",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "el tiempo invertido en un entrenamiento"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://github.com/segoedu/crossfit-ontology/Intervalo"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "isInterval"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://github.com/segoedu/crossfit-ontology/EntrenoWod"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://github.com/segoedu/crossfit-ontology/hasInterval"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/owl/owlapi/turtle#isPlace",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "El lugar donde se ha realizado un entrenamiento"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://github.com/segoedu/crossfit-ontology/Gimnasio"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "isPlace"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://github.com/segoedu/crossfit-ontology/EntrenoWod"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://github.com/segoedu/crossfit-ontology/hasPlace"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/owl/owlapi/turtle#isWOD",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "El entrenamiento realizado"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://github.com/segoedu/crossfit-ontology/WOD"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "isWOD"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://github.com/segoedu/crossfit-ontology/EntrenoWod"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://github.com/segoedu/crossfit-ontology/hasWOD"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/owl/owlapi/turtle#isWODLevel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "El nivel del entrenamiento"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://github.com/segoedu/crossfit-ontology/WODLevel"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "isWODLevel"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://github.com/segoedu/crossfit-ontology/WOD"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://github.com/segoedu/crossfit-ontology/hasWODLevel"
-  } ]
-}, {
   "@id" : "http://www.w3.org/2001/XMLSchema#date",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
@@ -889,6 +737,9 @@
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@language" : "es",
     "@value" : "La ontología del CrossFit modela de manera estructurada los movimientos, ejercicios, entrenamientos diarios (WODs), atletas, gimnasios y aspectos nutricionales relacionados con esta disciplina de acondicionamiento físico, permitiendo un análisis detallado de las relaciones y características específicas de cada elemento en el dominio del CrossFit."
+  }, {
+    "@language" : "en",
+    "@value" : "The CrossFit ontology provides a structured model of the movements, exercises, daily workouts (WODs), athletes, gyms, and nutritional aspects associated with this fitness discipline, allowing detailed analysis of the relationships and specific characteristics of each element in the CrossFit domain."
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@language" : "en",
@@ -903,14 +754,46 @@
 }, {
   "@id" : "https://github.com/segoedu/crossfit-ontology#ExerciseStop",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Último ejercicio de una secuencia ordenada de entrenamiento."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ExerciseStop"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://github.com/segoedu/crossfit-ontology/ExerciseWithReps"
   } ]
 }, {
   "@id" : "https://github.com/segoedu/crossfit-ontology#hasExerciseNext",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Secuencia ordenada de ejercicios"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://github.com/segoedu/crossfit-ontology/ExerciseWithReps"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasExerciseNext"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/ExerciseWithReps"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology#isExerciseNext"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology#isExerciseNext",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Especifica el ejercicio precedente de la secuencia del entrenamiento."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/ExerciseWithReps"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isExerciseNext"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://github.com/segoedu/crossfit-ontology/ExerciseWithReps"
@@ -1878,6 +1761,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://github.com/segoedu/crossfit-ontology/Ciudad"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/isCity"
   } ]
 }, {
   "@id" : "https://github.com/segoedu/crossfit-ontology/hasDate",
@@ -1893,6 +1779,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://github.com/segoedu/crossfit-ontology/Date"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/isDate"
   } ]
 }, {
   "@id" : "https://github.com/segoedu/crossfit-ontology/hasEquipment",
@@ -1928,6 +1817,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://github.com/segoedu/crossfit-ontology/EstiloWOD"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/isEstiloWOD"
   } ]
 }, {
   "@id" : "https://github.com/segoedu/crossfit-ontology/hasEstiramiento",
@@ -1963,6 +1855,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://github.com/segoedu/crossfit-ontology/Exercise"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/isExercise"
   } ]
 }, {
   "@id" : "https://github.com/segoedu/crossfit-ontology/hasExerciseWithReps",
@@ -2017,6 +1912,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://github.com/segoedu/crossfit-ontology/Intervalo"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/isInterval"
   } ]
 }, {
   "@id" : "https://github.com/segoedu/crossfit-ontology/hasMuscle",
@@ -2052,6 +1950,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://github.com/segoedu/crossfit-ontology/Gimnasio"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/isPlace"
   } ]
 }, {
   "@id" : "https://github.com/segoedu/crossfit-ontology/hasWOD",
@@ -2068,6 +1969,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://github.com/segoedu/crossfit-ontology/WOD"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/isWOD"
   } ]
 }, {
   "@id" : "https://github.com/segoedu/crossfit-ontology/hasWODLevel",
@@ -2084,6 +1988,41 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://github.com/segoedu/crossfit-ontology/WODLevel"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/isWODLevel"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/isCity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La ciudad donde se ubica un gimnasio."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Ciudad"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isCity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Gimnasio"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/isDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El día de realización de un entrenamiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isDate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/EntrenoWod"
   } ]
 }, {
   "@id" : "https://github.com/segoedu/crossfit-ontology/isEquipment",
@@ -2102,6 +2041,22 @@
     "@id" : "https://github.com/segoedu/crossfit-ontology/Exercise"
   } ]
 }, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/isEstiloWOD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "el estilo asociado a un WOD específico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/EstiloWOD"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isEstiloWOD"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/WOD"
+  } ]
+}, {
   "@id" : "https://github.com/segoedu/crossfit-ontology/isEstiramiento",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2116,6 +2071,22 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://github.com/segoedu/crossfit-ontology/Exercise"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/isExercise",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "el ejercicio asociado a un entrenamiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Exercise"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isExercise"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/ExerciseWithReps"
   } ]
 }, {
   "@id" : "https://github.com/segoedu/crossfit-ontology/isExerciseWithReps",
@@ -2150,6 +2121,22 @@
     "@id" : "https://github.com/segoedu/crossfit-ontology/Exercise"
   } ]
 }, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/isInterval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "el tiempo invertido en un entrenamiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Intervalo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isInterval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/EntrenoWod"
+  } ]
+}, {
   "@id" : "https://github.com/segoedu/crossfit-ontology/isMuscle",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2164,6 +2151,54 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://github.com/segoedu/crossfit-ontology/Exercise"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/isPlace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El lugar donde se ha realizado un entrenamiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/Gimnasio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isPlace"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/EntrenoWod"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/isWOD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El entrenamiento realizado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/WOD"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isWOD"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/EntrenoWod"
+  } ]
+}, {
+  "@id" : "https://github.com/segoedu/crossfit-ontology/isWODLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El nivel del entrenamiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/WODLevel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isWODLevel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/segoedu/crossfit-ontology/WOD"
   } ]
 }, {
   "@id" : "https://schema.org/schema:address",
