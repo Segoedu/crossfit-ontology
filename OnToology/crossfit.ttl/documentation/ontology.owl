@@ -11,6 +11,7 @@
         <dc:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-14T09:00:00</dc:created>
         <dc:creator>Eduardo de la Cruz &lt;https://segoedu.com/&gt;</dc:creator>
         <dc:description xml:lang="es">La ontología del CrossFit modela de manera estructurada los movimientos, ejercicios, entrenamientos diarios (WODs), atletas, gimnasios y aspectos nutricionales relacionados con esta disciplina de acondicionamiento físico, permitiendo un análisis detallado de las relaciones y características específicas de cada elemento en el dominio del CrossFit.</dc:description>
+        <dc:description xml:lang="en">The CrossFit ontology provides a structured model of the movements, exercises, daily workouts (WODs), athletes, gyms, and nutritional aspects associated with this fitness discipline, allowing detailed analysis of the relationships and specific characteristics of each element in the CrossFit domain.</dc:description>
         <dc:title xml:lang="en">Crossfit ontology</dc:title>
         <dc:title xml:lang="es">Ontología del Crossfit</dc:title>
         <owl:versionInfo>0.0.1</owl:versionInfo>
@@ -103,110 +104,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#isCity -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#isCity">
-        <owl:inverseOf rdf:resource="https://github.com/segoedu/crossfit-ontology/hasCity"/>
-        <rdfs:domain rdf:resource="https://github.com/segoedu/crossfit-ontology/Ciudad"/>
-        <rdfs:range rdf:resource="https://github.com/segoedu/crossfit-ontology/Gimnasio"/>
-        <rdfs:comment xml:lang="es">la ciudad donde se ubica un gimnasio</rdfs:comment>
-        <rdfs:label>isCity</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#isDate -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#isDate">
-        <owl:inverseOf rdf:resource="https://github.com/segoedu/crossfit-ontology/hasDate"/>
-        <rdfs:domain rdf:resource="https://github.com/segoedu/crossfit-ontology/Date"/>
-        <rdfs:range rdf:resource="https://github.com/segoedu/crossfit-ontology/EntrenoWod"/>
-        <rdfs:comment xml:lang="es">El día de realización de un entrenamiento</rdfs:comment>
-        <rdfs:label>isDate</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#isEstiloWOD -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#isEstiloWOD">
-        <owl:inverseOf rdf:resource="https://github.com/segoedu/crossfit-ontology/hasEstiloWOD"/>
-        <rdfs:domain rdf:resource="https://github.com/segoedu/crossfit-ontology/EstiloWOD"/>
-        <rdfs:range rdf:resource="https://github.com/segoedu/crossfit-ontology/WOD"/>
-        <rdfs:comment xml:lang="es">el estilo asociado a un WOD específico</rdfs:comment>
-        <rdfs:label>isEstiloWOD</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#isExercise -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#isExercise">
-        <owl:inverseOf rdf:resource="https://github.com/segoedu/crossfit-ontology/hasExercise"/>
-        <rdfs:domain rdf:resource="https://github.com/segoedu/crossfit-ontology/Exercise"/>
-        <rdfs:range rdf:resource="https://github.com/segoedu/crossfit-ontology/ExerciseWithReps"/>
-        <rdfs:comment xml:lang="es">el ejercicio asociado a un entrenamiento</rdfs:comment>
-        <rdfs:label>isExercise</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#isInterval -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#isInterval">
-        <owl:inverseOf rdf:resource="https://github.com/segoedu/crossfit-ontology/hasInterval"/>
-        <rdfs:domain rdf:resource="https://github.com/segoedu/crossfit-ontology/Intervalo"/>
-        <rdfs:range rdf:resource="https://github.com/segoedu/crossfit-ontology/EntrenoWod"/>
-        <rdfs:comment xml:lang="es">el tiempo invertido en un entrenamiento</rdfs:comment>
-        <rdfs:label>isInterval</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#isPlace -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#isPlace">
-        <owl:inverseOf rdf:resource="https://github.com/segoedu/crossfit-ontology/hasPlace"/>
-        <rdfs:domain rdf:resource="https://github.com/segoedu/crossfit-ontology/Gimnasio"/>
-        <rdfs:range rdf:resource="https://github.com/segoedu/crossfit-ontology/EntrenoWod"/>
-        <rdfs:comment xml:lang="es">El lugar donde se ha realizado un entrenamiento</rdfs:comment>
-        <rdfs:label>isPlace</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#isWOD -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#isWOD">
-        <owl:inverseOf rdf:resource="https://github.com/segoedu/crossfit-ontology/hasWOD"/>
-        <rdfs:domain rdf:resource="https://github.com/segoedu/crossfit-ontology/WOD"/>
-        <rdfs:range rdf:resource="https://github.com/segoedu/crossfit-ontology/EntrenoWod"/>
-        <rdfs:comment xml:lang="es">El entrenamiento realizado</rdfs:comment>
-        <rdfs:label>isWOD</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#isWODLevel -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#isWODLevel">
-        <owl:inverseOf rdf:resource="https://github.com/segoedu/crossfit-ontology/hasWODLevel"/>
-        <rdfs:domain rdf:resource="https://github.com/segoedu/crossfit-ontology/WODLevel"/>
-        <rdfs:range rdf:resource="https://github.com/segoedu/crossfit-ontology/WOD"/>
-        <rdfs:comment xml:lang="es">El nivel del entrenamiento</rdfs:comment>
-        <rdfs:label>isWODLevel</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
 
 
@@ -221,8 +118,23 @@
 
 
     <owl:ObjectProperty rdf:about="https://github.com/segoedu/crossfit-ontology#hasExerciseNext">
+        <owl:inverseOf rdf:resource="https://github.com/segoedu/crossfit-ontology#isExerciseNext"/>
         <rdfs:domain rdf:resource="https://github.com/segoedu/crossfit-ontology/ExerciseWithReps"/>
         <rdfs:range rdf:resource="https://github.com/segoedu/crossfit-ontology/ExerciseWithReps"/>
+        <rdfs:comment>Secuencia ordenada de ejercicios</rdfs:comment>
+        <rdfs:label>hasExerciseNext</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/segoedu/crossfit-ontology#isExerciseNext -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/segoedu/crossfit-ontology#isExerciseNext">
+        <rdfs:domain rdf:resource="https://github.com/segoedu/crossfit-ontology/ExerciseWithReps"/>
+        <rdfs:range rdf:resource="https://github.com/segoedu/crossfit-ontology/ExerciseWithReps"/>
+        <rdfs:comment xml:lang="es">Especifica el ejercicio precedente de la secuencia del entrenamiento.</rdfs:comment>
+        <rdfs:label>isExerciseNext</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -258,6 +170,7 @@
 
 
     <owl:ObjectProperty rdf:about="https://github.com/segoedu/crossfit-ontology/hasCity">
+        <owl:inverseOf rdf:resource="https://github.com/segoedu/crossfit-ontology/isCity"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://github.com/segoedu/crossfit-ontology/Gimnasio"/>
         <rdfs:range rdf:resource="https://github.com/segoedu/crossfit-ontology/Ciudad"/>
@@ -271,6 +184,7 @@
 
 
     <owl:ObjectProperty rdf:about="https://github.com/segoedu/crossfit-ontology/hasDate">
+        <owl:inverseOf rdf:resource="https://github.com/segoedu/crossfit-ontology/isDate"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://github.com/segoedu/crossfit-ontology/EntrenoWod"/>
         <rdfs:range rdf:resource="https://github.com/segoedu/crossfit-ontology/Date"/>
@@ -297,6 +211,7 @@
 
 
     <owl:ObjectProperty rdf:about="https://github.com/segoedu/crossfit-ontology/hasEstiloWOD">
+        <owl:inverseOf rdf:resource="https://github.com/segoedu/crossfit-ontology/isEstiloWOD"/>
         <rdfs:domain rdf:resource="https://github.com/segoedu/crossfit-ontology/WOD"/>
         <rdfs:range rdf:resource="https://github.com/segoedu/crossfit-ontology/EstiloWOD"/>
         <rdfs:comment xml:lang="es">Nivel del entrenamiento WOD</rdfs:comment>
@@ -323,6 +238,7 @@
 
 
     <owl:ObjectProperty rdf:about="https://github.com/segoedu/crossfit-ontology/hasExercise">
+        <owl:inverseOf rdf:resource="https://github.com/segoedu/crossfit-ontology/isExercise"/>
         <rdfs:domain rdf:resource="https://github.com/segoedu/crossfit-ontology/ExerciseWithReps"/>
         <rdfs:range rdf:resource="https://github.com/segoedu/crossfit-ontology/Exercise"/>
         <rdfs:comment xml:lang="es">Un ejercicio con repeticiones está asociado a un ejercicio en particular</rdfs:comment>
@@ -361,6 +277,7 @@
 
 
     <owl:ObjectProperty rdf:about="https://github.com/segoedu/crossfit-ontology/hasInterval">
+        <owl:inverseOf rdf:resource="https://github.com/segoedu/crossfit-ontology/isInterval"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://github.com/segoedu/crossfit-ontology/EntrenoWod"/>
         <rdfs:range rdf:resource="https://github.com/segoedu/crossfit-ontology/Intervalo"/>
@@ -387,6 +304,7 @@
 
 
     <owl:ObjectProperty rdf:about="https://github.com/segoedu/crossfit-ontology/hasPlace">
+        <owl:inverseOf rdf:resource="https://github.com/segoedu/crossfit-ontology/isPlace"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://github.com/segoedu/crossfit-ontology/EntrenoWod"/>
         <rdfs:range rdf:resource="https://github.com/segoedu/crossfit-ontology/Gimnasio"/>
@@ -400,6 +318,7 @@
 
 
     <owl:ObjectProperty rdf:about="https://github.com/segoedu/crossfit-ontology/hasWOD">
+        <owl:inverseOf rdf:resource="https://github.com/segoedu/crossfit-ontology/isWOD"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://github.com/segoedu/crossfit-ontology/EntrenoWod"/>
         <rdfs:range rdf:resource="https://github.com/segoedu/crossfit-ontology/WOD"/>
@@ -413,10 +332,35 @@
 
 
     <owl:ObjectProperty rdf:about="https://github.com/segoedu/crossfit-ontology/hasWODLevel">
+        <owl:inverseOf rdf:resource="https://github.com/segoedu/crossfit-ontology/isWODLevel"/>
         <rdfs:domain rdf:resource="https://github.com/segoedu/crossfit-ontology/WOD"/>
         <rdfs:range rdf:resource="https://github.com/segoedu/crossfit-ontology/WODLevel"/>
         <rdfs:comment xml:lang="es">Un WOD específico entrenado tiene un nivel asociado</rdfs:comment>
         <rdfs:label>hasWODLevel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/segoedu/crossfit-ontology/isCity -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/segoedu/crossfit-ontology/isCity">
+        <rdfs:domain rdf:resource="https://github.com/segoedu/crossfit-ontology/Ciudad"/>
+        <rdfs:range rdf:resource="https://github.com/segoedu/crossfit-ontology/Gimnasio"/>
+        <rdfs:comment xml:lang="es">La ciudad donde se ubica un gimnasio.</rdfs:comment>
+        <rdfs:label>isCity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/segoedu/crossfit-ontology/isDate -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/segoedu/crossfit-ontology/isDate">
+        <rdfs:domain rdf:resource="https://github.com/segoedu/crossfit-ontology/Date"/>
+        <rdfs:range rdf:resource="https://github.com/segoedu/crossfit-ontology/EntrenoWod"/>
+        <rdfs:comment xml:lang="es">El día de realización de un entrenamiento</rdfs:comment>
+        <rdfs:label>isDate</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -433,6 +377,18 @@
     
 
 
+    <!-- https://github.com/segoedu/crossfit-ontology/isEstiloWOD -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/segoedu/crossfit-ontology/isEstiloWOD">
+        <rdfs:domain rdf:resource="https://github.com/segoedu/crossfit-ontology/EstiloWOD"/>
+        <rdfs:range rdf:resource="https://github.com/segoedu/crossfit-ontology/WOD"/>
+        <rdfs:comment xml:lang="es">el estilo asociado a un WOD específico</rdfs:comment>
+        <rdfs:label>isEstiloWOD</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://github.com/segoedu/crossfit-ontology/isEstiramiento -->
 
 
@@ -441,6 +397,18 @@
         <rdfs:range rdf:resource="https://github.com/segoedu/crossfit-ontology/Exercise"/>
         <rdfs:comment xml:lang="es">Un ejercicio que sirve de estiramiento para otro</rdfs:comment>
         <rdfs:label>isEstiramiento</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/segoedu/crossfit-ontology/isExercise -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/segoedu/crossfit-ontology/isExercise">
+        <rdfs:domain rdf:resource="https://github.com/segoedu/crossfit-ontology/Exercise"/>
+        <rdfs:range rdf:resource="https://github.com/segoedu/crossfit-ontology/ExerciseWithReps"/>
+        <rdfs:comment xml:lang="es">el ejercicio asociado a un entrenamiento</rdfs:comment>
+        <rdfs:label>isExercise</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -469,6 +437,18 @@
     
 
 
+    <!-- https://github.com/segoedu/crossfit-ontology/isInterval -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/segoedu/crossfit-ontology/isInterval">
+        <rdfs:domain rdf:resource="https://github.com/segoedu/crossfit-ontology/Intervalo"/>
+        <rdfs:range rdf:resource="https://github.com/segoedu/crossfit-ontology/EntrenoWod"/>
+        <rdfs:comment xml:lang="es">el tiempo invertido en un entrenamiento</rdfs:comment>
+        <rdfs:label>isInterval</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://github.com/segoedu/crossfit-ontology/isMuscle -->
 
 
@@ -477,6 +457,42 @@
         <rdfs:range rdf:resource="https://github.com/segoedu/crossfit-ontology/Exercise"/>
         <rdfs:comment xml:lang="es">un músculo involucrado en un ejercicio</rdfs:comment>
         <rdfs:label>isMuscle</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/segoedu/crossfit-ontology/isPlace -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/segoedu/crossfit-ontology/isPlace">
+        <rdfs:domain rdf:resource="https://github.com/segoedu/crossfit-ontology/Gimnasio"/>
+        <rdfs:range rdf:resource="https://github.com/segoedu/crossfit-ontology/EntrenoWod"/>
+        <rdfs:comment xml:lang="es">El lugar donde se ha realizado un entrenamiento</rdfs:comment>
+        <rdfs:label>isPlace</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/segoedu/crossfit-ontology/isWOD -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/segoedu/crossfit-ontology/isWOD">
+        <rdfs:domain rdf:resource="https://github.com/segoedu/crossfit-ontology/WOD"/>
+        <rdfs:range rdf:resource="https://github.com/segoedu/crossfit-ontology/EntrenoWod"/>
+        <rdfs:comment xml:lang="es">El entrenamiento realizado</rdfs:comment>
+        <rdfs:label>isWOD</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/segoedu/crossfit-ontology/isWODLevel -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/segoedu/crossfit-ontology/isWODLevel">
+        <rdfs:domain rdf:resource="https://github.com/segoedu/crossfit-ontology/WODLevel"/>
+        <rdfs:range rdf:resource="https://github.com/segoedu/crossfit-ontology/WOD"/>
+        <rdfs:comment xml:lang="es">El nivel del entrenamiento</rdfs:comment>
+        <rdfs:label>isWODLevel</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -637,6 +653,8 @@
 
     <owl:Class rdf:about="https://github.com/segoedu/crossfit-ontology#ExerciseStop">
         <rdfs:subClassOf rdf:resource="https://github.com/segoedu/crossfit-ontology/ExerciseWithReps"/>
+        <rdfs:comment xml:lang="es">Último ejercicio de una secuencia ordenada de entrenamiento.</rdfs:comment>
+        <rdfs:label>ExerciseStop</rdfs:label>
     </owl:Class>
     
 
